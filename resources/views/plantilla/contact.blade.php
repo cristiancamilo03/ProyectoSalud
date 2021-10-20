@@ -88,17 +88,6 @@
                 <li><a href="{{route('registrarse.create')}}">Registrarse</a></li>
                 <li><a href="{{url('acerca-nosotros')}}">Acerca de nosotros</a></li>
                 <li><a href="{{url('contactenos')}}">Contáctenos</a></li>
-                
-            
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Page <span class="fa fa-angle-down"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="404.html">404 Page</a></li>
-                    <li><a href="#">Link Two</a></li>
-                    <li><a href="#">Link Three</a></li>               
-                  </ul>
-                </li>               
-                <li class="active"><a href="contact.html">Contact</a></li>
               </ul>           
             </div><!--/.nav-collapse -->
           </div>     
