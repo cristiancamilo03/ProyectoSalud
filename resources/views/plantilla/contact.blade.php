@@ -10,7 +10,7 @@
     ================================================== -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <title>WpF Medinova : Contact</title>
+     <title>GHC: Gestor de Historiales Clínicos: Contáctenos</title>
 
     <!-- Mobile Specific Metas
     ================================================== -->
@@ -76,36 +76,20 @@
 
               <!-- LOGO -->              
               <!-- TEXT BASED LOGO -->
-              <a class="navbar-brand" href="index.html"><i class="fa fa-heartbeat"></i>WpF <span>Medinova</span></a>              
+              <a class="navbar-brand" href="index.html"><img src="./img/icono.svg" alt="" style="max-height: 100px; max-width: 100px"></a>              
               <!-- IMG BASED LOGO  -->
               <!--  <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>   -->     
                      
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="features.html">Features</a></li>
-                <li><a href="about-us.html">About Us</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Service <span class="fa fa-angle-down"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="medical-counseling.html">Medical Counseling</a></li>
-                    <li><a href="medical-research.html">Medical Research</a></li>
-                    <li><a href="blood-bank.html">Blood Bank</a></li>
-                  </ul>
-                </li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">News <span class="fa fa-angle-down"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="blog-archive.html">Blog Archive</a></li>
-                    <li><a href="blog-archive-with-left-sidebar.html">Blog Archive with Left Sidebar</a></li>
-                    <li><a href="blog-archive-with-right-sidebar.html">Blog Archive with Right Sidebar</a></li>
-                    <li><a href="blog-single.html">Blog Single</a></li>
-                    <li><a href="blog-single-with-left-sidebar.html">Blog Single with Left Sidebar</a></li>
-                    <li><a href="blog-single-with-right-sidebar.html">Blog Single with Right Sidebar</a></li>           
-                  </ul>
-                </li>
+              <li class="active"><a href="index.html">Inicio</a></li>
+                <li><a href="{{url('login')}}">Ingresar</a></li>
+                <li><a href="{{route('registrarse.create')}}">Registrarse</a></li>
+                <li><a href="{{url('acerca-nosotros')}}">Acerca de nosotros</a></li>
+                <li><a href="{{url('contactenos')}}">Contáctenos</a></li>
+                
+            
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Page <span class="fa fa-angle-down"></span></a>
                   <ul class="dropdown-menu" role="menu">
@@ -134,7 +118,7 @@
               <div class="blog-breadcrumbs-right">
                 <ol class="breadcrumb">
                   <li>You are here</li>
-                  <li><a href="#">Home</a></li>                  
+                  <li><a href="">Inicio</a></li>                  
                   <li class="active">Contact</li>
                 </ol>
               </div>
@@ -266,7 +250,7 @@
           <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div class="footer-copyright">
-              <p>&copy; Copyright 2015 <a href="index.html">WpF Medinova</a></p>
+              <p>&copy; Copyright 2021 <a href="index.html">GHC Gestor de Historiales Clínicos</a></p>
             </div>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -285,7 +269,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <p>Design & Developed By <a rel="nofollow" href="http://www.wpfreeware.com/">WpF Freeware</a></p>
+            <p>Diseñado & Desarrollado Por <a rel="nofollow" href="http://www.wpfreeware.com/">GHC Gestor de Historiales Clínicos</a></p>
             </div>
           </div>
         </div>

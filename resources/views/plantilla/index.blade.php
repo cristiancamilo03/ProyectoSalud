@@ -75,7 +75,7 @@
               </button>
               <!-- LOGO -->              
               <!-- TEXT BASED LOGO -->
-              <a class="navbar-brand" href="index.html"><img src="./img/icono.svg" alt="" style="max-height: 150px; max-width: 150px"></a>              
+              <a class="navbar-brand" href="index.html"><img src="./img/icono.svg" alt="" style="max-height: 100px; max-width: 100px"></a>              
               <!-- IMG BASED LOGO  -->
                <!-- <a class="navbar-brand" href="index.html"><img src="../../images/logo.png" alt="logo"></a>                       -->
             </div>

@@ -47,7 +47,7 @@
 											<td>{{ $historialclinico->Telefono }}</td>
 											<td>
                                             
-                                                <img src="{{ $historialclinico->FirmaPaciente }}" class="img-fluid"width="120px" height="120px"  max-width="120px" max-height="120px">
+                                                <img src="{{ $historialclinico->FirmaPaciente }}" class="img-fluid"width="80px" height="80px"  max-width="80px" max-height="80px">
                                                 
                                             </td>
                                             <td>@if ($historialclinico->estadoHistorial == 0)

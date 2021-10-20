@@ -109,12 +109,11 @@ class historialController extends Controller
         $historial->EdadPaciente = $request->input('edadPaciente');
         $historial->FechaHistorial = $request->input('fechaHistorial');
         $historial->DescripcionHistorial = $request->input('descripcionHistorial');
-        $historial->Direccion = $request->input('direccionHistorial');
-        $historial->Telefono = $request->input('telefonoHistorial');
-        $historial->FirmaPaciente = $request->input('firma');
+        $historial->Direccion = $request->input('direccionPaciente');
+        $historial->Telefono = $request->input('telefonoPaciente');
 
         $historial->save();
-        echo "Historial Actualizado";
+        return redirect("historial")->with('mensaje_exito' , "Historial Actualizado");
     }
 
     /**

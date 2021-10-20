@@ -24,8 +24,6 @@ Route::get('prueba', function () {
 
 
 
-Route::get('pdf' , 'PDFSalud@pdf');
-
 Route::resource('datos' , 'DatController');
 
 Route::resource('historial', 'historialController')->middleware('estado');
