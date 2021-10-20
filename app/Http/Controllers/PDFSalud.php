@@ -25,8 +25,7 @@ class PDFSalud extends Controller
         $pdf->SetXY(05, 30);
         $pdf->Cell(50,10,  'Apellido paciente:');
         $pdf->SetXY(05, 40);
-        $pdf->Cell(50,10,  'Telefono paciente:');
-        $pdf->SetXY(05, 40);
+        $pdf->Cell(50,10,  'Telefono paciente');
         }
         return response($pdf->Output() , 200, [ 'Content-type' => 'application/pdf']); //->Es para convertir de html a pdf
     }

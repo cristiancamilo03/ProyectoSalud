@@ -19,8 +19,7 @@ class DatosUsuario extends Migration
             $table->string('Apellido');
             $table->string('Edad');
             $table->string('Direccion');
-            $table->string('Telefono');
-                        
+            $table->string('Telefono');    
             $table->timestamps();
         });
     }
