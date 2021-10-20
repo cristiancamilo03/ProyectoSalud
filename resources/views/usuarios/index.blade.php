@@ -22,6 +22,8 @@
 										<th>Edad Usuario</th>
 										<th>Direccion de residencia</th>
 										<th>Telefono usuario</th>
+                                        <th>Firma Usuario</th>
+                                        <th>Estado Usuario</th>
                                         <th></th>
                                     </tr>
                                 </thead>
@@ -34,11 +36,17 @@
 											<td>{{ $dato->Edad }}</td>
 											<td>{{ $dato->Direccion }}</td>
 											<td>{{ $dato->Telefono }}</td>
+                                            <td>{{ $dato->Firma }}</td>
+                                            <td>@if ($dato->Estado == 0)
+                                                Inactivo
+                                            @endif
+                                            @if ($dato->Estado == 1)
+                                                Activo
+                                            @endif</td>
                                             <td>
                                                 <a href="{{ url('datos/'. $dato->idDat)}}">
                                                 <i class="icono2 far fa-eye"></i>
-                                                </a>
-                                               
+                                                </a>  
                                             </td>
                                             <td>
                                                 <a href="{{ url('datos/'. $dato->idDat . "/edit")}}">

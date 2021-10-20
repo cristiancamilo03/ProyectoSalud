@@ -64,9 +64,10 @@ class DatController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(DatosPersonales $datos)
     {
-        //
+        return view('usuarios.edit')->with('usuarios' , $datos);
+
     }
 
     /**
@@ -76,9 +77,16 @@ class DatController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, DatosPersonales $datos)
     {
-        //
+        $datos->Nombre = $request->input('nombrePaciente');
+        $datos->Apellido = $request->input('apellidoPaciente');
+        $datos->Edad = $request->input('edadPaciente');
+        $datos->Direccion = $request->input('fechaHistorial');
+        $datos->Telefono = $request->input('descripcionHistorial');
+        $datos->Firma = $request->input('direccionHistorial');
+        $datos->save();
+        echo "Historial Actualizado";
     }
 
     /**

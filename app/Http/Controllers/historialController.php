@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use App\historialModel;
-
+use App\config\filesystems;
 class historialController extends Controller
 {
     /**
@@ -42,7 +42,19 @@ class historialController extends Controller
         $maxHistorial=historialModel::all()->max('CustomerId');
 
         //2. Crear el nuevo recurso
+       
+        
+
         $nuevoHistorial = new historialModel();
+
+        if($request->hasFile('firmaPaciente')){
+            $file = $request->file('firmaPaciente');
+            $destinationPath = 'images/featureds/';
+            $filename = time() . '-' . $file->getClientOriginalName();
+            $uploadSuccess = $request->file('firmaPaciente')->move($destinationPath, $filename);
+            $nuevoHistorial->FirmaPaciente= $destinationPath . $filename;
+        }
+
         $nuevoHistorial->NombrePaciente= $request->input("nombrePaciente");
         $nuevoHistorial->ApellidoPaciente= $request->input("apellidoPaciente");
         $nuevoHistorial->EdadPaciente= $request->input("edadPaciente");
@@ -50,10 +62,8 @@ class historialController extends Controller
         $nuevoHistorial->DescripcionHistorial= $request->input("descripcionHistorial");
         $nuevoHistorial->Direccion= $request->input("direccionPaciente");
         $nuevoHistorial->Telefono= $request->input("telefonoPaciente");
-        $nuevoHistorial->FirmaPaciente= $request->input("firmaPaciente");
+       
         $nuevoHistorial->save();
-
-        
         return redirect("historial")->with('mensaje_exito' , "Historial Creado");
     }
 
@@ -92,7 +102,8 @@ class historialController extends Controller
      */
     public function update(Request $request, historialModel $historial)
     {
-        //Actualizar el cliente que llega a traves del modelo binding
+        
+
         $historial->NombrePaciente = $request->input('nombrePaciente');
         $historial->ApellidoPaciente = $request->input('apellidoPaciente');
         $historial->EdadPaciente = $request->input('edadPaciente');

@@ -4,11 +4,12 @@ namespace App\Http\Controllers;
 
 use App\User;
 use Illuminate\Http\Request;
-use App\Http\Requests\UserStoreRequest;
+use App\Http\Requests\confirmarContraseña;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 
-class UserController extends Controller
+
+class registrarseController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,7 +18,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        return view('auth.index')->with('usuarios' , User::paginate(10));
+       
     }
 
     /**
@@ -28,7 +29,7 @@ class UserController extends Controller
     public function create()
     {
         //Mostrar formulario de creacion de nuevos usuarios
-        return view('auth.create');
+        return view('inicioSesion.registrarse');
     }
 
     /**
@@ -37,12 +38,13 @@ class UserController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(UserStoreRequest $request)
+    public function store(Request $request)
     {
         $usuario = new User();
         $usuario->name = $request->input('nombreUsuario');
         $usuario->email = $request->input('correoUsuario');
         $usuario->password = Hash::make($request->input('contraseñaUsuario'));
+        $usuario->Estado = 1;
         $usuario->save();
         echo "Usuario Registrado";
 
@@ -54,9 +56,10 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    
     public function show($id)
     {
-        //
+        
     }
 
     /**
