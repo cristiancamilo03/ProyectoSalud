@@ -25,7 +25,7 @@ class inicioController extends Controller
         }else {
             //Usuario no autenticado
                 return view('inicioSesion.login')->with('mensaje', "Usuario no reconocido");
-             }
+             }  
 
     }
 
@@ -34,6 +34,6 @@ class inicioController extends Controller
     {
         Auth::logout();
         //Redirigir al login
-        return redirect()->route('login.form');
+        return redirect('login')->with('mensaje' , "Sesion cerrada con exito");
     }
 }

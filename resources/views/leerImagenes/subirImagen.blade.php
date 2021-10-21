@@ -11,7 +11,7 @@
                         <span class="card-title">Create Historial Clínico</span>
                     </div>
                     <div class="card-body">
-                        <form method="POST" action="{{ url('historial') }}" method="POST" enctype="multipart/form-data">
+                        <form method="POST" action="{{ url('Lector') }}" method="POST" enctype="multipart/form-data">
                             @csrf
 
                         <fieldset>

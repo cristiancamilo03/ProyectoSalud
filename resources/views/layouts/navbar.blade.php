@@ -23,7 +23,10 @@
               <a class="nav-link active" aria-current="page" href="{{url('../../usuarios')}}">Usuarios</a>
             </li>
             <li class="nav-item">
-              <a href=""><button style="position: absolute; right: 30px" type="button" class="btn btn-dark">Cerrar Sesión</button></a>
+              <a class="nav-link active" aria-current="page" href="{{url('perfil/' . Auth::user()->idDat . "/edit")}}">Completar Registro</a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('logout') }}"><button style="position: absolute; right: 30px" type="button" class="btn btn-dark">Cerrar Sesión</button></a>
             </li>
           </ul>
         </div>

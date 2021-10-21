@@ -20,11 +20,12 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
+                        <a href="{{ route('datos.create') }}"<button class="btn btn-primary">Crear Datos Usuario</button></a>
                     </div>
                     @if ( session("mesnaje_exito"))
                         <div>{{ session("mensaje_exito") }} </div>
                     @endif
-                    <a href="{{ route('datos.create') }}"<button class="btn btn-primary">Crear Datos Usuario</button></a>
+                   
                     <div class="card-body">
                         <div class="table-responsive">
                             <table id="historial"class="table table-striped table-hover">
@@ -37,6 +38,7 @@
 										<th>Direccion de residencia</th>
 										<th>Telefono usuario</th>
                                         <th>Estado Usuario</th>
+                                        <th></th>
                                         <th></th>
                                     </tr>
                                 </thead>

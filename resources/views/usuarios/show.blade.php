@@ -8,39 +8,34 @@
                             <span class="card-title">Ver Datos Usuario</span>
                         </div>
                         <div class="float-right">
-                            <a class="btn btn-info" href="{{ route('usuarios.index') }}"> Volver</a>
+                            <a class="btn btn-info" href="{{ url('datos') }}"> Volver</a> 
                         </div>
                     </div>
                     <div class="card-body">
                         
                         <div class="form-group">
-                            <strong>Nombre Paciente:</strong>
-                            {{ $datos->NombrePaciente }}
+                            <strong>Nombre Usuario:</strong>
+                            {{ $datos->name }}
                         </div>
                         <div class="form-group">
-                            <strong>Apellido Paciente:</strong>
-                            {{ $datos->ApellidoPaciente }}
+                            <strong>Apellido Usuario:</strong>
+                            {{ $datos->Apellido}}
                         </div>
                         <div class="form-group">
-                            <strong>Fecha Historial:</strong>
-                            {{ $datos->FechaHistorial }}
+                            <strong>Correo Usuario:</strong>
+                            {{ $datos->email}}
                         </div>
                         <div class="form-group">
-                            <strong>Descripcion Historial:</strong>
-                            {{ $datos->DescripcionHistorial }}
+                            <strong>Edad Usuario:</strong>
+                            {{ $datos->Edad }}
                         </div>
                         <div class="form-group">
-                            <strong>Firma Historial:</strong>
-                            <img src="{{ $historial->FirmaPaciente}}" class="img-fluid"width="130px" height="130px"  max-width="130px" max-height="130px">
+                            <strong>Direccion Usuario:</strong>
+                            {{ $datos->Direccion }}
                         </div>
                         <div class="form-group">
-                            <strong>Estado Historial:</strong>
-                            @if ($historial->estadoHistorial == 0)
-                                                    Inactivo
-                                                @endif
-                                                @if ($historial->estadoHistorial == 1)
-                                                    Activo
-                                                @endif</td>
+                            <strong>Telefono Usuario:</strong>
+                            {{ $datos->Telefono }}
                         </div>
                     </div>
                 </div>

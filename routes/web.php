@@ -30,17 +30,22 @@ Route::resource('historial', 'historialController')->middleware('estado');
 
 Route::resource('registrarse', 'registrarseController');
 
-Route::get('plantilla', function () {
-    return view ('plantilla.index');
+Route::get('inicio', function () {
+    return view('plantilla.index');
 });
 
-Route::get('contactenos', function () {
-    return view ('plantilla.contact');
+Route::get('Perfil', function () {
+    return view ('inicioSesion.actualizarPefil');
 });
 
-Route::get('acerca-nosotros', function () {
-    return view ('plantilla.about-us');
+Route::resource('perfil', 'actualizarController');
+
+Route::get('informes', function () {
+    return view('historial.informes');
 });
+// Route::get('acerca-nosotros', function () {
+//     return view ('plantilla.about-us');
+// });
 
 Route::resource('Lector', 'lectorImagenesController');
 
@@ -50,4 +55,4 @@ Route::post('login' , 'inicioController@login')->name('login.verify');
 
 Route::get('logout', 'inicioController@logout')->name('logout');
 
-Route::get('pdf/{idHistorial}' , 'PDFSalud@pdf');
+Route::get('pdf' , 'plantillaPDF@pdf');

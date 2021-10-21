@@ -63,6 +63,9 @@
                                                 <img src="{{ $historialclinico->FirmaPaciente }}" class="img-fluid"width="120px" height="120px"  max-width="120px" max-height="120px">
                                                 
                                             </td>
+                                            <td>
+                                                <a href="{{$historialclinico->FirmaPaciente}}"> Ver informe</a>
+                                            </td>
                                             <td>@if ($historialclinico->estadoHistorial == 0)
                                                     Inactivo
                                                 @endif

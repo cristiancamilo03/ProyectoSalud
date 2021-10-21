@@ -56,9 +56,10 @@ class DatController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($idDat)
     {
-        //
+        $datos = DatosPersonales::find($idDat);
+        return view('usuarios.show')->with('datos' , $datos);
     }
 
     /**
@@ -67,10 +68,10 @@ class DatController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(DatosPersonales $datos)
+    public function edit($idDat)
     {
-        return view('usuarios.edit')->with('usuarios' , $datos);
-
+        $datos = DatosPersonales::find($idDat);
+        return view('usuarios.edit')->with('datos' , $datos);
     }
 
     /**
@@ -80,15 +81,17 @@ class DatController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, DatosPersonales $datos)
+    public function update(Request $request, DatosPersonales $id)
     {
-        $datos->Nombre = $request->input('nombrePaciente');
-        $datos->Apellido = $request->input('apellidoPaciente');
-        $datos->Edad = $request->input('edadPaciente');
-        $datos->Direccion = $request->input('fechaHistorial');
-        $datos->Telefono = $request->input('descripcionHistorial');
-        $datos->Firma = $request->input('direccionHistorial');
-        $datos->save();
+
+        $dato = DatosPersonales::all();
+        $dato->name = $request->input('nombreDat');
+        $dato->Apellido = $request->input('apellidoDat');
+        $dato->email = $request->input('emailDat');
+        $dato->Edad = $request->input('edadDat');
+        $dato->Direccion = $request->input('direccionDat');
+        $dato->Telefono = $request->input('descripcionDat');
+        $dato->save();
         echo "Historial Actualizado";
     }
 

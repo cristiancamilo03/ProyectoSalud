@@ -6,29 +6,29 @@
     <!-- Basic -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
+
     <!-- Mobile Meta -->
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    
+
     <!-- Site Meta -->
     <title>GHC Gestor de Historiales Clínicos</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
-    
+
     <!-- Site Icons -->
-    <link rel="shortcut icon" href="plantilla/images/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="plantilla/images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="../css/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="../css/apple-touch-icon.png">
 
 	<!-- Google Fonts -->
- 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,700" rel="stylesheet"> 
+ 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,700" rel="stylesheet">
 
 	<!-- Custom & Default Styles -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/carousel.css">
-	<link rel="stylesheet" href="style.css"> 
+	<link rel="stylesheet" href="style.css">
 
 	<!-- [if lt IE 9]>
 		<script src="js/vendor/html5shiv.min.js"></script>
@@ -37,7 +37,7 @@
 
 </head>
 <body>
-	
+
 	<div id="wrapper">
         <div class="topbar">
             <div class="container">
@@ -58,14 +58,14 @@
                         <nav class="topbar-menu">
                             <ul class="list-inline text-right navbar-right">
                                 <li class="dropdown">
-                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="images/us.png" alt=""> English
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="../css/us.png" alt=""> English
                                     <span class="fa fa-angle-down"></span></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#"><img src="images/tr.png" alt=""> Turkish</a></li>
-                                        <li><a href="#"><img src="images/si.png" alt=""> Spanish</a></li>
-                                        <li><a href="#"><img src="images/it.png" alt=""> Italian</a></li>
-                                        <li><a href="#"><img src="images/ae.png" alt=""> Arabic</a></li>
-                                        <li><a href="#"><img src="images/de.png" alt=""> German</a></li>
+                                        <li><a href="#"><img src="../css/tr.png" alt=""> Turkish</a></li>
+                                        <li><a href="#"><img src="../css/si.png" alt=""> Spanish</a></li>
+                                        <li><a href="#"><img src="../css/it.png" alt=""> Italian</a></li>
+                                        <li><a href="#"><img src="../css/ae.png" alt=""> Arabic</a></li>
+                                        <li><a href="#"><img src="../css/de.png" alt=""> German</a></li>
                                     </ul>
                                 </li>
                                 <li class="hidden-xs"><i class="fa fa-clock-o"></i> 08:00 - 17:00</li>
@@ -88,7 +88,7 @@
 				                <span class="icon-bar"></span>
 				                <span class="icon-bar"></span>
 				            </button>
-							<a class="navbar-brand" href="index.html"><img src="" alt="Linda"></a>
+							<a class="navbar-brand" href="index.html"><img src="../css/logo.png" alt="Linda"></a>
 				        </div>
 				        <div id="navbar" class="navbar-collapse collapse">
 				            <ul class="nav navbar-nav navbar-right">
@@ -98,7 +98,7 @@
 						            <ul class="dropdown-menu">
 						                <li>
 						                    <div class="yamm-content">
-							                    <div class="row"> 
+							                    <div class="row">
 							                    	<div class="col-md-4">
 														<ul>
 							                    			<li><a href="service-01.html">SEO Consultants</a></li>
@@ -157,7 +157,7 @@
 
 		<section class="section transheader homepage parallax" data-stellar-background-ratio="0.5" style="background-image:url('./plantilla/upload/bg_04.jpg');">
 			<div class="container">
-				<div class="row">	
+				<div class="row">
 					<div class="col-md-10 col-md-offset-1 col-sm-12 text-center">
 						<h2>Let's Analysis Your Website SEO</h2>
 						<p class="lead">Now you can customize your SEO service according to your need</p>
@@ -227,7 +227,7 @@
 
 				<div class="row service-list text-center">
 					<div class="col-md-4 col-sm-12 col-xs-12 first">
-						<div class="service-wrapper wow fadeIn">	
+						<div class="service-wrapper wow fadeIn">
 							<i class="flaticon-competition"></i>
 							<div class="service-details">
 								<h4><a href="service-01.html" title="">What We Do</a></h4>
@@ -238,7 +238,7 @@
 					</div><!-- end col -->
 
 					<div class="col-md-4 col-sm-12 col-xs-12">
-						<div class="service-wrapper wow fadeIn">	
+						<div class="service-wrapper wow fadeIn">
 							<i class="flaticon-content"></i>
 							<div class="service-details">
 								<h4><a href="service-02.html" title="">Who We Are</a></h4>
@@ -249,7 +249,7 @@
 					</div><!-- end col -->
 
 					<div class="col-md-4 col-sm-12 col-xs-12 last">
-						<div class="service-wrapper wow fadeIn">	
+						<div class="service-wrapper wow fadeIn">
 							<i class="flaticon-html"></i>
 							<div class="service-details">
 								<h4><a href="service-02.html" title="">Our Mission</a></h4>
@@ -265,7 +265,7 @@
 				<div class="row">
 					<div class="col-md-4">
                         <div class="milestone-counter c1">
-                            <img src="images/icon_07.png" alt="" class="alignleft">
+                            <img src="../css/icon_07.png" alt="" class="alignleft">
                             <h3 class="stat-count">2901</h3>
                             <p>Happy Customers</p>
                         </div>
@@ -273,7 +273,7 @@
 
 					<div class="col-md-4">
                         <div class="milestone-counter c2">
-                            <img src="images/icon_08.png" alt="" class="alignleft">
+                            <img src="../css/icon_08.png" alt="" class="alignleft">
                             <h3 class="stat-count">304</h3>
                             <p>Online Strategy</p>
                         </div>
@@ -289,7 +289,7 @@
                 </div>
 			</div><!-- end container -->
 		</section><!-- end section -->
-		
+
 		<section class="section lb nopad spotlight style1">
 		    <div class="image col-md-4 hidden-sm hidden-xs">
 		        <img src="upload/blog_alt_06.jpg" alt="" />
@@ -313,7 +313,7 @@
 						<div class="case-box">
 							<img src="upload/case_01.png" alt="" class="img-responsive">
 							<div class="magnifier">
-								<a href="case-studies-single.html"><i class="fa fa-link"></i></a> 
+								<a href="case-studies-single.html"><i class="fa fa-link"></i></a>
 							</div>
 						</div><!-- end case-box -->
 					</div><!-- end col -->
@@ -322,7 +322,7 @@
 						<div class="case-box">
 							<img src="upload/case_07.jpg" alt="" class="img-responsive">
 							<div class="magnifier">
-								<a href="case-studies-single.html"><i class="fa fa-link"></i></a> 
+								<a href="case-studies-single.html"><i class="fa fa-link"></i></a>
 							</div>
 						</div><!-- end case-box -->
 					</div><!-- end col -->
@@ -331,7 +331,7 @@
 						<div class="case-box">
 							<img src="upload/case_03.png" alt="" class="img-responsive">
 							<div class="magnifier">
-								<a href="case-studies-single.html"><i class="fa fa-link"></i></a> 
+								<a href="case-studies-single.html"><i class="fa fa-link"></i></a>
 							</div>
 						</div><!-- end case-box -->
 					</div><!-- end col -->
@@ -340,7 +340,7 @@
 						<div class="case-box">
 							<img src="upload/case_02.png" alt="" class="img-responsive">
 							<div class="magnifier">
-								<a href="case-studies-single.html"><i class="fa fa-link"></i></a> 
+								<a href="case-studies-single.html"><i class="fa fa-link"></i></a>
 							</div>
 						</div><!-- end case-box -->
 					</div><!-- end col -->
@@ -349,7 +349,7 @@
 						<div class="case-box">
 							<img src="upload/case_05.jpg" alt="" class="img-responsive">
 							<div class="magnifier">
-								<a href="case-studies-single.html"><i class="fa fa-link"></i></a> 
+								<a href="case-studies-single.html"><i class="fa fa-link"></i></a>
 							</div>
 						</div><!-- end case-box -->
 					</div><!-- end col -->
@@ -358,7 +358,7 @@
 						<div class="case-box">
 							<img src="upload/case_06.jpg" alt="" class="img-responsive">
 							<div class="magnifier">
-								<a href="case-studies-single.html"><i class="fa fa-link"></i></a> 
+								<a href="case-studies-single.html"><i class="fa fa-link"></i></a>
 							</div>
 						</div><!-- end case-box -->
 					</div><!-- end col -->
@@ -398,7 +398,7 @@
 										<h4>Monthly SEO Packages</h4>
 									</div><!-- end pricing-header -->
 									<ul class="first-colon">
-										<li>Competition power 
+										<li>Competition power
 											<span>
 												<a href="#" data-toggle="tooltip" data-placement="left" title="This is tooltip, you can add anything here.">
 												<i class="fa fa-info"></i>
@@ -412,7 +412,7 @@
 												</a>
 											</span>
 										</li>
-										<li>Rank Guarantee 
+										<li>Rank Guarantee
 											<span>
 												<a href="#" data-toggle="tooltip" data-placement="left" title="This is tooltip, you can add anything here.">
 												<i class="fa fa-info"></i>
@@ -641,7 +641,7 @@
 										<h4>Yearly SEO Packages</h4>
 									</div><!-- end pricing-header -->
 									<ul class="first-colon">
-										<li>Competition power 
+										<li>Competition power
 											<span>
 												<a href="#" data-toggle="tooltip" data-placement="left" title="This is tooltip, you can add anything here.">
 												<i class="fa fa-info"></i>
@@ -655,7 +655,7 @@
 												</a>
 											</span>
 										</li>
-										<li>Rank Guarantee 
+										<li>Rank Guarantee
 											<span>
 												<a href="#" data-toggle="tooltip" data-placement="left" title="This is tooltip, you can add anything here.">
 												<i class="fa fa-info"></i>
@@ -910,7 +910,7 @@
 						<div class="client-box">
 							<a href="#"><img src="upload/client_03.png" alt="" class="img-responsive"></a>
 						</div>
-					</div><!-- end col -->	
+					</div><!-- end col -->
 					<div class="col-md-2 col-sm-2 col-xs-6">
 						<div class="client-box">
 							<a href="#"><img src="upload/client_04.png" alt="" class="img-responsive"></a>
@@ -925,7 +925,7 @@
 						<div class="client-box">
 							<a href="#"><img src="upload/client_06.png" alt="" class="img-responsive"></a>
 						</div>
-					</div><!-- end col -->	
+					</div><!-- end col -->
 				</div><!-- end row -->
 			</div><!-- end container -->
 		</section><!-- end section -->
@@ -1051,7 +1051,7 @@
 						<div class="client-box">
 							<a href="#"><img src="upload/client_03.png" alt="" class="img-responsive"></a>
 						</div>
-					</div><!-- end col -->	
+					</div><!-- end col -->
 					<div class="col-md-2 col-sm-2 col-xs-6">
 						<div class="client-box">
 							<a href="#"><img src="upload/client_04.png" alt="" class="img-responsive"></a>
@@ -1066,7 +1066,7 @@
 						<div class="client-box">
 							<a href="#"><img src="upload/client_06.png" alt="" class="img-responsive"></a>
 						</div>
-					</div><!-- end col -->	
+					</div><!-- end col -->
 				</div><!-- end row -->
 			</div><!-- end container -->
 		</section><!-- end section -->

@@ -86,9 +86,6 @@ class historialController extends Controller
      */
     public function edit(historialModel $historial)
     {
-
-        //1.
-
         //Mostrar el formulario de actualizar recurso: Cliente
         return view('historial.edit')->with('historial' , $historial);
     }

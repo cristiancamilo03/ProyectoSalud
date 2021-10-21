@@ -11,7 +11,7 @@ class lectorImagenesController extends Controller
     {
         //Mostrar la variable flash "mensaje_exito" si exixte
         echo session('mensaje_exito');//Session sirve para tener accesos a cualquier variable
-        return view('leerImagenes.subirImagen')->with('historial' , lectorModel::paginate(10));
+        return view('leerImagenes.subirImagen')->with('lectorImagenes' , lectorModel::paginate(10));
     }
     public function store(Request $request)
     {
@@ -27,6 +27,6 @@ class lectorImagenesController extends Controller
         }
        
         $nuevaImagen->save();
-        return redirect("Lector")->with('mensaje_exito' , "Historial Creado");
+        return redirect("Lector")->with('mensaje_exito' , "Imagen Leida");
     }
 }
