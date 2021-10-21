@@ -1,1006 +1,1170 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!--=============================================== 
-    Template Design By WpFreeware Team.
-    Author URI : http://www.wpfreeware.com/
-    ====================================================-->
+<!doctype html>
+<!--[if IE 9]> <html class="no-js ie9 fixed-layout" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js " lang="en"> <!--<![endif]-->
+<head>
 
-    <!-- Basic Page Needs
-    ================================================== -->
+    <!-- Basic -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <title>GHC: Gestor de Historiales Clínicos : Inicio</title>
-
-    <!-- Mobile Specific Metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/icon" href="../imagenes/Icono.svg"/>
-    <!-- CSS
-    ================================================== -->       
-    <!-- Bootstrap css file-->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font awesome css file-->
-    <link href="css/font-awesome.min.css" rel="stylesheet">       
-    <!-- Default Theme css file -->
-    <link id="switcher" href="css/themes/default-theme.css" rel="stylesheet">   
-    <!-- Slick slider css file -->
-    <link href="css/slick.css" rel="stylesheet"> 
-    <!-- Photo Swipe Image Gallery -->
-    <link rel='stylesheet prefetch' href='css/photoswipe.css'>
-    <link rel='stylesheet prefetch' href='css/default-skin.css'>    
-
-    <!-- Main structure css file -->
-    <link href="../style.css" rel="stylesheet">
-   
-    <!-- Google fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>  
-    <link href='http://fonts.googleapis.com/css?family=Habibi' rel='stylesheet' type='text/css'>   
-    <link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative:900' rel='stylesheet' type='text/css'>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]--> 
-  </head>
-  <body>  
     
-    <!-- BEGAIN PRELOADER -->
-    <div id="preloader">
-      <div id="status">&nbsp;</div>
-    </div>
-    <!-- END PRELOADER -->
+    <!-- Mobile Meta -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- Site Meta -->
+    <title>GHC Gestor de Historiales Clínicos</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="plantilla/images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="plantilla/images/apple-touch-icon.png">
 
-    <!-- SCROLL TOP BUTTON -->
-    <a class="scrollToTop" href="#"><i class="fa fa-heartbeat"></i></a>
-    <!-- END SCROLL TOP BUTTON -->
+	<!-- Google Fonts -->
+ 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,700" rel="stylesheet"> 
 
-    <!--=========== BEGIN HEADER SECTION ================-->
-    <header id="header">
-      <!-- BEGIN MENU -->
-      <div class="menu_area">
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">  
-          <div class="container">
-            <div class="navbar-header">
-              <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <!-- LOGO -->              
-              <!-- TEXT BASED LOGO -->
-              <a class="navbar-brand" href="index.html"><img src="./img/icono.svg" alt="" style="max-height: 100px; max-width: 100px"></a>              
-              <!-- IMG BASED LOGO  -->
-               <!-- <a class="navbar-brand" href="index.html"><img src="../../images/logo.png" alt="logo"></a>                       -->
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-                <li class="active"><a href="index.html">Inicio</a></li>
-                <li><a href="{{url('login')}}">Ingresar</a></li>
-                <li><a href="{{route('registrarse.create')}}">Registrarse</a></li>
-                <li><a href="{{url('acerca-nosotros')}}">Acerca de nosotros</a></li>
-                <li><a href="{{url('contactenos')}}">Contáctenos</a></li>
-              </ul>           
-            </div><!--/.nav-collapse -->
-          </div>     
-        </nav>  
-      </div>
-      <!-- END MENU -->    
-    </header>
-    <!--=========== END HEADER SECTION ================-->   
+	<!-- Custom & Default Styles -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/carousel.css">
+	<link rel="stylesheet" href="style.css"> 
 
-    <!--=========== BEGIN SLIDER SECTION ================-->
-    <section id="sliderArea">
-      <!-- Start slider wrapper -->      
-      <div class="top-slider">
-        <!-- Start First slide -->
-        <div class="top-slide-inner">
-          <div class="slider-img">
-            <img src="images/14.jpg" alt="">
-          </div>
-          <div class="slider-text">
-            <h2>An <strong>Excellent Theme</strong> for your Health Related Project</h2>
-            <p><strong>WpF Medinova</strong> Theme suitable for any health and medical related projets or business</p>
-            <div class="readmore_area">
-              <a data-hover="Read More" href="#"><span>Read More</span></a>                
-            </div>
-          </div>
-        </div>
-        <!-- End First slide -->
+	<!-- [if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+	<![endif] -->
 
-        <!-- Start 2nd slide -->
-        <div class="top-slide-inner">
-          <div class="slider-img">
-            <img src="images/15.jpg" alt="">
-          </div>
-          <div class="slider-text">
-            <h2><strong>Best Template</strong> For your Medical Website</h2>
-            <p><strong>WpF Medinova</strong> Theme suitable for any health and medical related projets or business</p>
-            <div class="readmore_area">
-              <a data-hover="Read More" href="#"><span>Read More</span></a>                
-            </div>
-          </div>
-        </div>
-        <!-- End 2nd slide -->
-
-        <!-- Start Third slide -->
-        <div class="top-slide-inner">
-          <div class="slider-img">
-            <img src="images/7.jpg" alt="">
-          </div>
-          <div class="slider-text">
-            <h2>An <strong>Excellent Theme</strong> for your Health Related Project</h2>
-            <p><strong>WpF Medinova</strong> Theme suitable for any health and medical related projets or business</p>
-            <div class="readmore_area">
-              <a data-hover="Read More" href="#"><span>Read More</span></a>                
-            </div>
-          </div>
-        </div>
-        <!-- End Third slide -->
-
-        <!-- Start Fourth slide -->
-        <div class="top-slide-inner">
-          <div class="slider-img">
-            <img src="images/12.jpg" alt="">
-          </div>
-          <div class="slider-text">
-            <h2><strong>Best Template</strong> For your Medical Website</h2>
-            <p><strong>WpF Medinova</strong> Theme suitable for any health and medical related projets or business</p>
-            <div class="readmore_area">
-              <a data-hover="Read More" href="#"><span>Read More</span></a>                
-            </div>
-          </div>
-        </div>
-        <!-- End Fourth slide -->
-
-        <!-- Start Fifth slide -->
-        <div class="top-slide-inner">
-          <div class="slider-img">
-            <img src="images/9.jpg" alt="">
-          </div>
-          <div class="slider-text">
-            <h2>An <strong>Excellent Theme</strong> for your Health Related Project</h2>
-            <p><strong>WpF Medinova</strong> Theme suitable for any health and medical related projets or business</p>
-            <div class="readmore_area">
-              <a data-hover="Read More" href="#"><span>Read More</span></a>                
-            </div>
-          </div>
-        </div>
-        <!-- End Fifth slide -->
-      </div><!-- /top-slider -->
-    </section>
-    <!--=========== END SLIDER SECTION ================-->
-
-    <!--=========== BEGIN Top Feature SECTION ================-->
-    <section id="topFeature">
-      <div class="row">
-        <!-- Start Single Top Feature -->
-        <div class="col-lg-4 col-md-4">
-          <div class="row">
-            <div class="single-top-feature">
-              <span class="fa fa-flask"></span>
-              <h3>Emergency Care</h3>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-              <div class="readmore_area">
-                <a href="#" data-hover="Read More"><span>Read More</span></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End Single Top Feature -->
-         
-        <!-- Start Single Top Feature -->
-        <div class="col-lg-4 col-md-4">
-          <div class="row">
-            <div class="single-top-feature opening-hours">
-              <span class="fa fa-clock-o"></span>
-              <h3>Opening Hours</h3>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
-              <ul class="opening-table">
-                <li>
-                  <span>Monday - Friday</span>
-                  <div class="value">8.00 - 16.00</div>
-                </li>
-                <li>
-                  <span>Saturday</span>
-                  <div class="value">9.30 - 15.30</div>
-                </li>
-                <li>
-                  <span>Sunday</span>
-                  <div class="value">9.30 - 17.00</div>
-                </li>
-              </ul>              
-            </div>
-          </div>
-        </div>
-        <!-- End Single Top Feature -->
-
-        <!-- Start Single Top Feature -->
-        <div class="col-lg-4 col-md-4">
-          <div class="row">
-            <div class="single-top-feature">
-              <span class="fa fa-hospital-o"></span>
-              <h3>Appointment</h3>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-              <div class="readmore_area">
-                <a data-toggle="modal" data-target="#myModal" href="#" data-hover="Appoinment"><span>Appoinment</span></a>    
-              </div>
-              <!-- start modal window -->
-              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                      <h4 class="modal-title" id="myModalLabel">Appoinment Details</h4>
-                    </div>
-                    <div class="modal-body">
-                      <div class="appointment-area">
-                        <form class="appointment-form">
-                          <div class="row">
-                            <div class="col-md-6 col-sm-6">
-                              <label class="control-label">Your name <span class="required">*</span>
-                              </label>
-                              <input type="text" class="wp-form-control wpcf7-text" placeholder="Your name">
-                            </div>
-                            <div class="col-md-6 col-sm-6">
-                              <label class="control-label">Your Email <span class="required">*</span>
-                              </label>
-                              <input type="mail" class="wp-form-control wpcf7-email" placeholder="Email address">  
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-md-6 col-sm-6">
-                              <label class="control-label">Your Birth <span class="required">*</span>
-                              </label>
-                              <input type="text" class="wp-form-control wpcf7-text" placeholder="dd/mm/yy">
-                            </div>
-                            <div class="col-md-6 col-sm-6">
-                              <label class="control-label">Your Phone <span class="required">*</span>
-                              </label>
-                              <input type="text" class="wp-form-control wpcf7-text" placeholder="Phone No">  
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-md-6 col-sm-6">
-                              <label class="control-label">Appointment Date <span class="required">*</span>
-                              </label>
-                              <input type="text" class="wp-form-control wpcf7-text" placeholder="dd/mm/yy">
-                            </div>
-                            <div class="col-md-6 col-sm-6">
-                              <label class="control-label">Select Department <span class="required">*</span>
-                              </label>
-                              <select class="wp-form-control wpcf7-select">
-                                <option val="1">Dental</option>
-                                <option val="2">cardiology</option>
-                                <option val="3">neurology</option>
-                                <option val="4">Drugstore</option>
-                                <option val="5">x-ray</option>
-                                <option val="6">birth</option>
-                                <option val="7">general</option>
-                                <option val="8">testing</option>
-                                <option val="9">first-aid</option>
-                                <option val="10">immunizations</option><option val="11">pulmonary</option>
-                              </select> 
-                            </div>
-                          </div>         
-                          <input type="text" class="wp-form-control wpcf7-text" placeholder="Subject">
-                          <textarea class="wp-form-control wpcf7-textarea" cols="30" rows="10" placeholder="What would you like to tell us"></textarea>
-                         <button class="wpcf7-submit button--itzel" type="submit"><i class="button__icon fa fa-share"></i><span>Book Appointment</span></button>  
-                        </form>
-                      </div>
-                    </div>                    
-                  </div><!-- /.modal-content -->
-                </div><!-- /.modal-dialog -->
-              </div><!-- /.modal -->
-            </div>
-          </div>
-        </div>
-        <!-- End Single Top Feature -->
-      </div>
-    </section>
-    <!--=========== END Top Feature SECTION ================-->
-
-    <!--=========== BEGIN Service SECTION ================-->
-    <section id="service">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-md-12">
-            <div class="service-area">
-              <!-- Start Service Title -->
-              <div class="section-heading">
-                <h2>Our Services</h2>
-                <div class="line"></div>
-              </div>
-              <!-- Start Service Content -->
-              <div class="service-content">
+</head>
+<body>
+	
+	<div id="wrapper">
+        <div class="topbar">
+            <div class="container">
                 <div class="row">
-                  <!-- Start Single Service -->
-                  <div class="col-lg-4 col-md-4">
-                    <div class="single-service">
-                      <div class="service-icon">
-                        <span class="fa fa-stethoscope service-icon-effect"></span>  
-                      </div>                      
-                      <h3><a href="#">Cardio Monitoring</a></h3>
-                      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
-                    </div>
-                  </div>
-                  <!-- Start Single Service -->
-                  <div class="col-lg-4 col-md-4">
-                    <div class="single-service">
-                      <div class="service-icon">
-                        <span class="fa fa-heartbeat service-icon-effect"></span>  
-                      </div>                      
-                      <h3><a href="#">Rehabilitation Therapy</a></h3>
-                      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
-                    </div>
-                  </div>
-                  <!-- Start Single Service -->
-                  <div class="col-lg-4 col-md-4">
-                    <div class="single-service">
-                      <div class="service-icon">
-                        <span class="fa fa-h-square service-icon-effect"></span>  
-                      </div>                      
-                      <h3><a href="#">Medical Health Care</a></h3>
-                      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
-                    </div>
-                  </div>
-                  <!-- Start Single Service -->
-                  <div class="col-lg-4 col-md-4">
-                    <div class="single-service">
-                      <div class="service-icon">
-                        <span class="fa fa-medkit service-icon-effect"></span>  
-                      </div>                      
-                      <h3><a href="#">Background Checks</a></h3>
-                      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
-                    </div>
-                  </div>
-                  <!-- Start Single Service -->
-                  <div class="col-lg-4 col-md-4">
-                    <div class="single-service">
-                      <div class="service-icon">
-                        <span class="fa fa-user-md service-icon-effect"></span>  
-                      </div>                      
-                      <h3><a href="#">Special Doctor</a></h3>
-                      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
-                    </div>
-                  </div>
-                  <!-- Start Single Service -->
-                  <div class="col-lg-4 col-md-4">
-                    <div class="single-service">
-                      <div class="service-icon">
-                        <span class="fa fa-ambulance service-icon-effect"></span>  
-                      </div>                      
-                      <h3><a href="#">24 Hours Service</a></h3>
-                      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--=========== End Service SECTION ================-->
+                    <div class="col-md-6 col-sm-6 hidden-xs">
+                        <nav class="topbar-menu">
+                            <ul class="list-inline">
+                            	<li>Follow us: </li>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul><!-- end list -->
+                        </nav><!-- end menu -->
+                    </div><!-- end col -->
 
-    <!--=========== BEGAIN Why Choose Us SECTION ================-->
-    <section id="whychooseSection">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-md-12">
-            <div class="service-area">
-              <!-- Start Service Title -->
-              <div class="section-heading">
-                <h2>Why Choose Us</h2>
-                <div class="line"></div>
-              </div>              
-            </div>
-          </div>
-          <div class="col-lg-12 col-md-12">
-            <div class="row">
-              <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12">
-                <div class="whyChoose-left">
-                  <div class="whychoose-slider">
-                    <div class="whychoose-singleslide">
-                      <img src="images/choose-us-img1.jpg" alt="img">
-                    </div>
-                    <div class="whychoose-singleslide">
-                      <img src="images/choose-us-img2.jpg" alt="img">
-                    </div>
-                    <div class="whychoose-singleslide">
-                      <img src="images/choose-us-img3.jpg" alt="img">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-7 col-md-6 col-sm-6 col-xs-12">
-                <div class="whyChoose-right">
-                  <div class="media">
-                    <div class="media-left">
-                      <a href="#" class="media-icon">
-                        <span class="fa fa-hospital-o"></span>
-                      </a>
-                    </div>
-                    <div class="media-body">
-                      <h4 class="media-heading">Great Infrastructure</h4>
-                      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>  
-                    </div>
-                  </div>
-                  <div class="media">
-                    <div class="media-left">
-                      <a href="#" class="media-icon">
-                        <span class="fa fa-user-md"></span>
-                      </a>
-                    </div>
-                    <div class="media-body">
-                      <h4 class="media-heading">Qualified Doctors</h4>
-                      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>  
-                    </div>
-                  </div>
-                  <div class="media">
-                    <div class="media-left">
-                      <a href="#" class="media-icon">
-                        <span class="fa fa-ambulance"></span>
-                      </a>
-                    </div>
-                    <div class="media-body">
-                      <h4 class="media-heading">Emergency Support</h4>
-                      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>  
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>          
-        </div>
-      </div>
-    </section>
-    <!--=========== END Why Choose Us SECTION ================-->
+                    <div class="col-md-6 col-sm-6">
+                        <nav class="topbar-menu">
+                            <ul class="list-inline text-right navbar-right">
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="images/us.png" alt=""> English
+                                    <span class="fa fa-angle-down"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#"><img src="images/tr.png" alt=""> Turkish</a></li>
+                                        <li><a href="#"><img src="images/si.png" alt=""> Spanish</a></li>
+                                        <li><a href="#"><img src="images/it.png" alt=""> Italian</a></li>
+                                        <li><a href="#"><img src="images/ae.png" alt=""> Arabic</a></li>
+                                        <li><a href="#"><img src="images/de.png" alt=""> German</a></li>
+                                    </ul>
+                                </li>
+                                <li class="hidden-xs"><i class="fa fa-clock-o"></i> 08:00 - 17:00</li>
+                                <li><i class="fa fa-phone"></i> +90 987 665 55 44</li>
+                            </ul><!-- end list -->
+                        </nav><!-- end menu -->
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </div><!-- end topbar -->
 
-    <!--=========== BEGAIN Counter SECTION ================-->
-    <section id="counterSection">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-md-12">
-            <div class="counter-area">
-              <div class="col-lg-3 col-md-3 col-sm-6">
-                <div class="counter-box">
-                  <div class="counter-no counter">
-                    200
-                  </div>
-                  <div class="counter-label">Doctors</div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-3 col-sm-6">
-                 <div class="counter-box">
-                  <div class="counter-no counter">
-                    300
-                  </div>
-                  <div class="counter-label">Clinic Rooms</div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-3 col-sm-6">
-                 <div class="counter-box">
-                  <div class="counter-no counter">
-                    350
-                  </div>
-                  <div class="counter-label">Awards</div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-3 col-sm-6">
-                 <div class="counter-box">
-                  <div class="counter-no counter">
-                    450
-                  </div>
-                  <div class="counter-label">Happy Patients</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--=========== End Counter SECTION ================-->
+		<header class="header site-header">
+			<div class="container">
+				<nav class="navbar navbar-default yamm">
+				    <div class="container-fluid">
+				        <div class="navbar-header">
+				            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				                <span class="sr-only">Toggle navigation</span>
+				                <span class="icon-bar"></span>
+				                <span class="icon-bar"></span>
+				                <span class="icon-bar"></span>
+				            </button>
+							<a class="navbar-brand" href="index.html"><img src="" alt="Linda"></a>
+				        </div>
+				        <div id="navbar" class="navbar-collapse collapse">
+				            <ul class="nav navbar-nav navbar-right">
+				                <li class="active"><a href="index.html">Home</a></li>
+				                <li class="dropdown yamm-fw hasmenu">
+				                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Features <span class="fa fa-angle-down"></span></a>
+						            <ul class="dropdown-menu">
+						                <li>
+						                    <div class="yamm-content">
+							                    <div class="row"> 
+							                    	<div class="col-md-4">
+														<ul>
+							                    			<li><a href="service-01.html">SEO Consultants</a></li>
+							                    			<li><a href="service-02.html">SEO Audits</a></li>
+							                    			<li><a href="service-03.html">SEO Packages & Plans</a></li>
+							                    			<li><a href="service-04.html">Web Copywriting</a></li>
+							                    			<li><a href="service-05.html">SEO Copywriting</a></li>
+							                    			<li><a href="service-06.html">Keyword Research</a></li>
+							                    			<li><a href="service-07.html">SEO Strategy</a></li>
+							                    			<li><a href="service-08.html">Website Design</a></li>
+							                    			<li><a href="service-09.html">Link Building Services</a></li>
+							                    		</ul>
+							                    	</div>
+							                    	<div class="col-md-4">
+														<ul>
+							                    			<li><a href="page-services.html">All Services</a></li>
+							                    			<li><a href="page-pricing.html">Pricing & Plans</a></li>
+							                    			<li><a href="page-clients.html">Our Clients</a></li>
+							                    			<li><a href="page-testimonials.html">Testimonials</a></li>
+							                    			<li><a href="page-ebooks.html">Free E-Books</a></li>
+							                    			<li><a href="page-seo-analysis.html">SEO Analysis</a></li>
+							                    			<li><a href="case-studies.html">Case Studies</a></li>
+							                    			<li><a href="case-studies-alt.html">Case Studies Alt</a></li>
+							                    			<li><a href="case-studies-single.html">Case Studies Single</a></li>
+							                    		</ul>
+							                    	</div>
+							                    	<div class="col-md-4">
+														<ul>
+							                    			<li><a href="blog.html">Blog & News</a></li>
+							                    			<li><a href="blog-alt.html">Blog Alternative</a></li>
+							                    			<li><a href="blog-single.html">Single Blog</a></li>
+							                    			<li><a href="page.html">Default Page</a></li>
+							                    			<li><a href="page-fullwidth.html">Fullwidth Page</a></li>
+							                    			<li><a href="page-contact.html">Contact us</a></li>
+							                    			<li><a href="page-contact-alt.html">Contact Alternative</a></li>
+							                    			<li><a href="page-faqs.html">FAQ's Page</a></li>
+							                    			<li><a href="page-not-found.html">404 Not Found</a></li>
+							                    		</ul>
+							                    	</div>
+							                    </div>
+						                    </div>
+						                </li>
+						            </ul>
+				                </li>
+				                <li><a href="page-about.html">What is SEO?</a></li>
+				                <li><a href="case-studies.html">Case Studies</a></li>
+				                <li><a href="blog.html">Blog</a></li>
+				                <li><a href="page-contact.html">Contact</a></li>
+                                <li class="lastlink hidden-xs hidden-sm"><a class="btn btn-primary" href="page-seo-analysis.html"><i class="glyphicon glyphicon-search"></i> free seo analysis</a></li>
+                            </ul>
+				        </div><!--/.nav-collapse -->
+				    </div><!--/.container-fluid -->
+				</nav><!-- end nav -->
+			</div><!-- end container -->
+		</header><!-- end header -->
 
-    <!--=========== BEGAIN Doctors SECTION ================-->
-    <section id="meetDoctors">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-md-12">
-            <div class="meetDoctors-area">
-             <!-- Start Service Title -->
-              <div class="section-heading">
-                <h2>Meet Our Doctors</h2>
-                <div class="line"></div>
-              </div>
-              <div class="doctors-area">
-                <ul class="doctors-nav">
-                  <li>
-                    <div class="single-doctor">
-                      <a class="tdoctor" href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
-                        <figure>
-                          <img src="images/doctor-1.jpg" />
-                          <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
-                          <figcaption>
-                            <h2>Dr. Yvonne Cadiline</h2>
-                            <p>Pediatric Clinic</p>
-                            <button>View</button>             
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <div class="single-doctor-social">
-                        <a href="#"><span class="fa fa-facebook"></span></a>
-                        <a href="#"><span class="fa fa-twitter"></span></a>
-                        <a href="#"><span class="fa fa-google-plus"></span></a>
-                        <a href="#"><span class="fa fa-linkedin"></span></a>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="single-doctor">
-                      <div class="single-doctor">
-                      <a class="tdoctor" href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
-                        <figure>
-                          <img src="images/doctor-2.jpg" />
-                          <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
-                          <figcaption>
-                            <h2>DR. Jack Johnson</h2>
-                            <p>Rehabilitation Therapy</p>
-                            <button>View</button>             
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <div class="single-doctor-social">
-                        <a href="#"><span class="fa fa-facebook"></span></a>
-                        <a href="#"><span class="fa fa-twitter"></span></a>
-                        <a href="#"><span class="fa fa-google-plus"></span></a>
-                        <a href="#"><span class="fa fa-linkedin"></span></a>
-                      </div>
-                    </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="single-doctor">
-                      <div class="single-doctor">
-                      <a class="tdoctor" href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
-                        <figure>
-                          <img src="images/doctor-3.jpg" />
-                          <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
-                          <figcaption>
-                            <h2>Dr. Vanessa Smouic</h2>
-                            <p>Cardiac Clinic</p>
-                            <button>View</button>             
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <div class="single-doctor-social">
-                        <a href="#"><span class="fa fa-facebook"></span></a>
-                        <a href="#"><span class="fa fa-twitter"></span></a>
-                        <a href="#"><span class="fa fa-google-plus"></span></a>
-                        <a href="#"><span class="fa fa-linkedin"></span></a>
-                      </div>
-                    </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="single-doctor">
-                      <div class="single-doctor">
-                      <a class="tdoctor" href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
-                        <figure>
-                          <img src="images/doctor-5.jpg" />
-                          <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
-                          <figcaption>
-                            <h2>Dr. David Gresshoff</h2>
-                            <p>Laryngological Clinic</p>
-                            <button>View</button>             
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <div class="single-doctor-social">
-                        <a href="#"><span class="fa fa-facebook"></span></a>
-                        <a href="#"><span class="fa fa-twitter"></span></a>
-                        <a href="#"><span class="fa fa-google-plus"></span></a>
-                        <a href="#"><span class="fa fa-linkedin"></span></a>
-                      </div>
-                    </div>
-                    </div>
-                  </li>
-                   <li>
-                    <div class="single-doctor">
-                      <a class="tdoctor" href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
-                        <figure>
-                          <img src="images/doctor-1.jpg" />
-                          <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
-                          <figcaption>
-                            <h2>Dr. Yvonne Cadiline</h2>
-                            <p>Pediatric Clinic</p>
-                            <button>View</button>             
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <div class="single-doctor-social">
-                        <a href="#"><span class="fa fa-facebook"></span></a>
-                        <a href="#"><span class="fa fa-twitter"></span></a>
-                        <a href="#"><span class="fa fa-google-plus"></span></a>
-                        <a href="#"><span class="fa fa-linkedin"></span></a>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="single-doctor">
-                      <div class="single-doctor">
-                      <a class="tdoctor" href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
-                        <figure>
-                          <img src="images/doctor-2.jpg" />
-                          <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
-                          <figcaption>
-                            <h2>DR. Jack Johnson</h2>
-                            <p>Rehabilitation Therapy</p>
-                            <button>View</button>             
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <div class="single-doctor-social">
-                        <a href="#"><span class="fa fa-facebook"></span></a>
-                        <a href="#"><span class="fa fa-twitter"></span></a>
-                        <a href="#"><span class="fa fa-google-plus"></span></a>
-                        <a href="#"><span class="fa fa-linkedin"></span></a>
-                      </div>
-                    </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="single-doctor">
-                      <div class="single-doctor">
-                      <a class="tdoctor" href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
-                        <figure>
-                          <img src="images/doctor-3.jpg" />
-                          <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
-                          <figcaption>
-                            <h2>Dr. Vanessa Smouic</h2>
-                            <p>Cardiac Clinic</p>
-                            <button>View</button>             
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <div class="single-doctor-social">
-                        <a href="#"><span class="fa fa-facebook"></span></a>
-                        <a href="#"><span class="fa fa-twitter"></span></a>
-                        <a href="#"><span class="fa fa-google-plus"></span></a>
-                        <a href="#"><span class="fa fa-linkedin"></span></a>
-                      </div>
-                    </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="single-doctor">
-                      <div class="single-doctor">
-                      <a class="tdoctor" href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
-                        <figure>
-                          <img src="images/doctor-5.jpg" />
-                          <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
-                          <figcaption>
-                            <h2>Dr. David Gresshoff</h2>
-                            <p>Laryngological Clinic</p>
-                            <button>View</button>             
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <div class="single-doctor-social">
-                        <a href="#"><span class="fa fa-facebook"></span></a>
-                        <a href="#"><span class="fa fa-twitter"></span></a>
-                        <a href="#"><span class="fa fa-google-plus"></span></a>
-                        <a href="#"><span class="fa fa-linkedin"></span></a>
-                      </div>
-                    </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--=========== End Doctors SECTION ================-->
+		<section class="section transheader homepage parallax" data-stellar-background-ratio="0.5" style="background-image:url('./plantilla/upload/bg_04.jpg');">
+			<div class="container">
+				<div class="row">	
+					<div class="col-md-10 col-md-offset-1 col-sm-12 text-center">
+						<h2>Let's Analysis Your Website SEO</h2>
+						<p class="lead">Now you can customize your SEO service according to your need</p>
+						<form class="calculateform">
+						    <div class="item-box">
+						        <div class="item-top form-inline">
+						            <div class="form-group">
+						                <div class="input-group2">
+						                    <span class="input-addon">
+												<i class="fa fa-link"></i>
+											</span>
+						                    <input type="url" class="form-control" id="urladres" name="url" placeholder="Add your website url">
+						                </div>
+						            </div>
+						            <input type="submit" name="send" value="Analysis" class="btn btn-default" />
+						        </div>
+						    </div>
+						</form>
+					</div><!-- end col -->
+				</div><!-- end row -->
+			</div><!-- end container -->
+		</section><!-- end section -->
 
-    <!--=========== BEGAIN Testimonial SECTION ================-->
-    <section id="testimonial">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-md-12">
-            <div class="testimonial-area">
-             <!-- Start Service Title -->
-              <div class="section-heading">
-                <h2>What our patients said</h2>
-                <div class="line"></div>
-              </div>
-              <div class="testimonial-area">
-                <ul class="testimonial-nav">
-                  <li>
-                    <div class="single-testimonial">
-                      <div class="testimonial-img">
-                        <img src="images/patients-3.jpg" alt="img">
-                      </div>
-                      <div class="testimonial-cotent">
-                        <p class="testimonial-parg">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.There are many variations of passages of Lorem Ipsum available.</p>
-                      </div>
-                    </div>
-                  </li> 
-                  <li>
-                    <div class="single-testimonial">
-                      <div class="testimonial-img">
-                        <img src="images/patients-1.jpg" alt="img">
-                      </div>
-                      <div class="testimonial-cotent">
-                        <p class="testimonial-parg">There are many variations of passages of Lorem Ipsum available.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-                      </div>
-                    </div>
-                  </li> 
-                  <li>
-                    <div class="single-testimonial">
-                      <div class="testimonial-img">
-                        <img src="images/patients-2.jpg" alt="img">
-                      </div>
-                      <div class="testimonial-cotent">
-                        <p class="testimonial-parg">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.There are many variations of passages of Lorem Ipsum available.</p>
-                      </div>
-                    </div>
-                  </li>                 
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--=========== End Testimonial SECTION ================-->
+		<section class="section nopad">
+			<div class="container-fluid">
+				<div class="row text-center">
+					<div class="col-md-3 col-sm-6 nopad first">
+						<div class="home-service c1">
+							<i class="flaticon-competition"></i>
+							<p>Owners: Promote your site on Google searches</p>
+						</div><!-- end home-service -->
+					</div><!-- end col -->
 
-    <!--=========== BEGAIN Home Blog SECTION ================-->
-    <section id="homeBLog">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-md-12">
-            <div class="homBlog-area">
-             <!-- Start Service Title -->
-              <div class="section-heading">
-                <h2>News From Blog</h2>
-                <div class="line"></div>
-              </div> 
-              <!-- Start Home Blog Content -->
-              <div class="homeBlog-content">
+					<div class="col-md-3 col-sm-6 nopad">
+						<div class="home-service c2">
+							<i class="flaticon-chat"></i>
+							<p>Publishers: Make money with blog articles</p>
+						</div><!-- end home-service -->
+					</div><!-- end col -->
+
+					<div class="col-md-3 col-sm-6 nopad">
+						<div class="home-service c3">
+							<i class="flaticon-domain"></i>
+							<p>Analyzers: Benefits from SEO analysis tools</p>
+						</div><!-- end home-service -->
+					</div><!-- end col -->
+
+					<div class="col-md-3 col-sm-6 nopad last">
+						<div class="home-service c4">
+							<i class="flaticon-medal"></i>
+							<p>Beginners: Learn more about search engines</p>
+						</div><!-- end home-service -->
+					</div><!-- end col -->
+				</div><!-- end row -->
+			</div><!-- end container -->
+		</section><!-- end section -->
+
+		<section class="section overfree">
+			<div class="icon-center"><i class="fa fa-anchor"></i></div>
+			<div class="container">
+				<div class="section-title text-center">
+					<small>Welcome to the best SEO service</small>
+					<h3>Top Reasons to Choose Us</h3>
+					<hr>
+					<p class="lead"> Morbi quis porta dolor. Nullam feugiat sapien et libero elementum faucibus. Praesent sagittis venenatis ipsum, eget <br>tristique odio pharetra quis. Sed maximus a eros quis ornare.</p>
+				</div><!-- end section-title -->
+
+				<div class="row service-list text-center">
+					<div class="col-md-4 col-sm-12 col-xs-12 first">
+						<div class="service-wrapper wow fadeIn">	
+							<i class="flaticon-competition"></i>
+							<div class="service-details">
+								<h4><a href="service-01.html" title="">What We Do</a></h4>
+								<p>Phasellus consequat egestas tempor. Fusce faucibus et ligula consequat imperdiet vel non ligula. Aliquam lorem leo.</p>
+								<a href="#" class="readmore">View Details</a>
+							</div>
+						</div><!-- end service-wrapper -->
+					</div><!-- end col -->
+
+					<div class="col-md-4 col-sm-12 col-xs-12">
+						<div class="service-wrapper wow fadeIn">	
+							<i class="flaticon-content"></i>
+							<div class="service-details">
+								<h4><a href="service-02.html" title="">Who We Are</a></h4>
+								<p>Pellentesque diam lorem, convallis ac auctor pretium, commodo ac lectus. Maecenas quis dui vel velit blandit ultrices.</p>
+								<a href="#" class="readmore">View Details</a>
+							</div>
+						</div><!-- end service-wrapper -->
+					</div><!-- end col -->
+
+					<div class="col-md-4 col-sm-12 col-xs-12 last">
+						<div class="service-wrapper wow fadeIn">	
+							<i class="flaticon-html"></i>
+							<div class="service-details">
+								<h4><a href="service-02.html" title="">Our Mission</a></h4>
+								<p>Donec non faucibus ligula. Phasellus fermentum tincidunt neque ac ultricies. Aenean felis eros, volutpat vitae lobortis.</p>
+								<a href="#" class="readmore">View Details</a>
+							</div>
+						</div><!-- end service-wrapper -->
+					</div><!-- end col -->
+				</div><!-- end row -->
+
+				<hr class="invis2">
+
+				<div class="row">
+					<div class="col-md-4">
+                        <div class="milestone-counter c1">
+                            <img src="images/icon_07.png" alt="" class="alignleft">
+                            <h3 class="stat-count">2901</h3>
+                            <p>Happy Customers</p>
+                        </div>
+                    </div>
+
+					<div class="col-md-4">
+                        <div class="milestone-counter c2">
+                            <img src="images/icon_08.png" alt="" class="alignleft">
+                            <h3 class="stat-count">304</h3>
+                            <p>Online Strategy</p>
+                        </div>
+                    </div>
+
+					<div class="col-md-4">
+                        <div class="milestone-counter c3">
+                            <img src="images/icon_09.png" alt="" class="alignleft">
+                            <h3 class="stat-count">890</h3>
+                            <p>Great Results</p>
+                        </div>
+                    </div>
+                </div>
+			</div><!-- end container -->
+		</section><!-- end section -->
+		
+		<section class="section lb nopad spotlight style1">
+		    <div class="image col-md-4 hidden-sm hidden-xs">
+		        <img src="upload/blog_alt_06.jpg" alt="" />
+		    </div>
+		    <div class="content">
+		        <h2>Be the leader in the sector</h2>
+		        <p>Cras arcu sapien, maximus a accumsan at, iaculis nec nunc. Nullam ac ultricies velit, ut tincidunt tellus. Nunc nec sem at ante imperdiet tempor. Ut eu vulputate augue. Maecenas ultrices, arcu vel condimentum pharetra, diam eros mattis lectus, nec gravida sem erat nec orci. In dapibus ex eget arcu feugiat, non rhoncus enimpien id ligula sollicitudin fringilla ut id lacus. </p>
+		         <a href="#" class="btn btn-transparent">Learn More</a>
+		    </div>
+		</section>
+
+		<section class="section bt">
+			<div class="container">
+				<div class="section-title text-center">
+					<small>Our search engine optimization works and happy customers in the past.</small>
+					<h3>Case Studies</h3>
+				</div><!-- end section-title -->
+
+				<div class="owl-carousel owl-theme lightcasestudies withhover">
+					<div class="item-carousel">
+						<div class="case-box">
+							<img src="upload/case_01.png" alt="" class="img-responsive">
+							<div class="magnifier">
+								<a href="case-studies-single.html"><i class="fa fa-link"></i></a> 
+							</div>
+						</div><!-- end case-box -->
+					</div><!-- end col -->
+
+					<div class="item-carousel">
+						<div class="case-box">
+							<img src="upload/case_07.jpg" alt="" class="img-responsive">
+							<div class="magnifier">
+								<a href="case-studies-single.html"><i class="fa fa-link"></i></a> 
+							</div>
+						</div><!-- end case-box -->
+					</div><!-- end col -->
+
+					<div class="item-carousel">
+						<div class="case-box">
+							<img src="upload/case_03.png" alt="" class="img-responsive">
+							<div class="magnifier">
+								<a href="case-studies-single.html"><i class="fa fa-link"></i></a> 
+							</div>
+						</div><!-- end case-box -->
+					</div><!-- end col -->
+
+					<div class="item-carousel">
+						<div class="case-box">
+							<img src="upload/case_02.png" alt="" class="img-responsive">
+							<div class="magnifier">
+								<a href="case-studies-single.html"><i class="fa fa-link"></i></a> 
+							</div>
+						</div><!-- end case-box -->
+					</div><!-- end col -->
+
+					<div class="item-carousel">
+						<div class="case-box">
+							<img src="upload/case_05.jpg" alt="" class="img-responsive">
+							<div class="magnifier">
+								<a href="case-studies-single.html"><i class="fa fa-link"></i></a> 
+							</div>
+						</div><!-- end case-box -->
+					</div><!-- end col -->
+
+					<div class="item-carousel">
+						<div class="case-box">
+							<img src="upload/case_06.jpg" alt="" class="img-responsive">
+							<div class="magnifier">
+								<a href="case-studies-single.html"><i class="fa fa-link"></i></a> 
+							</div>
+						</div><!-- end case-box -->
+					</div><!-- end col -->
+				</div>
+		    </div>
+		</section>
+
+		<section class="section lb nopad spotlight style1">
+		    <div class="content">
+		        <h2>Protect place with detailed analysis</h2>
+		        <p>Donec congue odio in mi finibus dignissim. Etiam faucibus pharetra euismod. Pellentesque malesuada et ligula et scelerisque. Pellentesque aliquet magna ut dolor consequat, luctus tincidunt metus consequat. Nam eu mattis ante, nec facilisis purus. Praesent ac venenatis erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer tincidunt finibus.</p>
+		         <a href="#" class="btn btn-transparent">Learn More</a>
+		    </div>
+		    <div class="image col-md-4 hidden-sm hidden-xs">
+		        <img src="upload/blog_alt_01.jpg" alt="" />
+		    </div>
+		</section>
+
+		<section class="section overfree">
+			<div class="icon-center"><i class="fa fa-bar-chart"></i></div>
+			<div class="container">
+				<div class="section-title text-center">
+					<small>Please select your correct price in below</small>
+					<h3>Ideal SEO Packages</h3>
+				</div><!-- end section-title -->
+				<div class="center-pricing">
+				  	<ul class="nav nav-tabs" role="tablist">
+					    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Montlhy</a></li>
+					    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Yearly</a></li>
+				  	</ul>
+			  		<div class="tab-content">
+			    		<div role="tabpanel" class="tab-pane active" id="home">
+							<div class="row big-pricing">
+								<div class="col-md-4 col-sm-6 col-xs-12 colon1 nopad">
+									<div class="pricing-header firstch c0">
+										<p>Check our prices for SEO studies!</p>
+										<h4>Monthly SEO Packages</h4>
+									</div><!-- end pricing-header -->
+									<ul class="first-colon">
+										<li>Competition power 
+											<span>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="This is tooltip, you can add anything here.">
+												<i class="fa fa-info"></i>
+												</a>
+											</span>
+										</li>
+										<li>Keyword
+											<span>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="This is tooltip, you can add anything here.">
+												<i class="fa fa-info"></i>
+												</a>
+											</span>
+										</li>
+										<li>Rank Guarantee 
+											<span>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="This is tooltip, you can add anything here.">
+												<i class="fa fa-info"></i>
+												</a>
+											</span>
+										</li>
+										<li>Sectoral Agreement Limit
+											<span>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="This is tooltip, you can add anything here.">
+												<i class="fa fa-info"></i>
+												</a>
+											</span>
+										</li>
+										<li>In-Site SEO Analysis
+											<span>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="This is tooltip, you can add anything here.">
+												<i class="fa fa-info"></i>
+												</a>
+											</span>
+										</li>
+										<li><a href="#">Link Building</a> Analysis
+											<span>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="This is tooltip, you can add anything here.">
+												<i class="fa fa-info"></i>
+												</a>
+											</span>
+										</li>
+										<li>Sector and Competitor Analysis
+											<span>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="This is tooltip, you can add anything here.">
+												<i class="fa fa-info"></i>
+												</a>
+											</span>
+										</li>
+										<li>Sectoral Presentation Articles
+											<span>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="This is tooltip, you can add anything here.">
+												<i class="fa fa-info"></i>
+												</a>
+											</span>
+										</li>
+										<li>Blog Based SEO
+											<span>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="This is tooltip, you can add anything here.">
+												<i class="fa fa-info"></i>
+												</a>
+											</span>
+										</li>
+										<li>Social Media Support
+											<span>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="This is tooltip, you can add anything here.">
+												<i class="fa fa-info"></i>
+												</a>
+											</span>
+										</li>
+										<li>Duplicate Content Support
+											<span>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="This is tooltip, you can add anything here.">
+												<i class="fa fa-info"></i>
+												</a>
+											</span>
+										</li>
+										<li>Product Base SEO
+											<span>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="This is tooltip, you can add anything here.">
+												<i class="fa fa-info"></i>
+												</a>
+											</span>
+										</li>
+										<li>Local SEO Analysis
+											<span>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="This is tooltip, you can add anything here.">
+												<i class="fa fa-info"></i>
+												</a>
+											</span>
+										</li>
+										<li>W3 Validation Fix
+											<span>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="This is tooltip, you can add anything here.">
+												<i class="fa fa-info"></i>
+												</a>
+											</span>
+										</li>
+										<li>Site Speed Fix
+											<span>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="This is tooltip, you can add anything here.">
+												<i class="fa fa-info"></i>
+												</a>
+											</span>
+										</li>
+										<li>Harmful Link Analysis
+											<span>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="This is tooltip, you can add anything here.">
+												<i class="fa fa-info"></i>
+												</a>
+											</span>
+										</li>
+										<li>Support
+											<span>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="This is tooltip, you can add anything here.">
+												<i class="fa fa-info"></i>
+												</a>
+											</span>
+										</li>
+									</ul>
+								</div><!-- end col -->
+								<div class="col-md-2 col-sm-6 col-xs-12 colon1 nopad text-center">
+									<div class="pricing-header firstch c1">
+										<p>$100/Month</p>
+										<h4>Beginner</h4>
+									</div><!-- end pricing-header -->
+									<ul>
+										<li>Aggressive</li>
+										<li>5 Keywords</li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-close"></i></li>
+										<li><i class="fa fa-close"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-close"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-close"></i></li>
+										<li><i class="fa fa-close"></i></li>
+										<li><i class="fa fa-close"></i></li>
+										<li><i class="fa fa-close"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-envelope"></i></li>
+									</ul>
+									<div class="pricing-footer text-center">
+										<a href="#" class="btn c1">ORDER NOW</a>
+									</div>
+								</div><!-- end col -->
+								<div class="col-md-2 col-sm-6 col-xs-12 colon1 nopad text-center">
+									<div class="pricing-header firstch c2">
+										<p>$500/Month</p>
+										<h4>Premium</h4>
+									</div><!-- end pricing-header -->
+									<ul>
+										<li>Leader of Market</li>
+										<li>10 Keywords</li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-close"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-close"></i></li>
+										<li><i class="fa fa-close"></i></li>
+										<li><i class="fa fa-close"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-phone"></i> <i class="fa fa-envelope"></i></li>
+									</ul>
+									<div class="pricing-footer text-center">
+										<a href="#" class="btn c2">ORDER NOW</a>
+									</div>
+								</div><!-- end col -->
+								<div class="col-md-2 col-sm-6 col-xs-12 colon1 nopad text-center">
+									<div class="pricing-header firstch c3">
+										<p>$1500/Month</p>
+										<h4>Enterprise</h4>
+									</div><!-- end pricing-header -->
+									<ul>
+										<li>Leader of Sector</li>
+										<li>25 Keywords</li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-close"></i></li>
+										<li><i class="fa fa-close"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-phone"></i> <i class="fa fa-skype"></i> <i class="fa fa-envelope"></i></li>
+									</ul>
+									<div class="pricing-footer text-center">
+										<a href="#" class="btn c3">ORDER NOW</a>
+									</div>
+								</div><!-- end col -->
+								<div class="col-md-2 col-sm-6 col-xs-12 colon1 colon4 nopad text-center">
+									<div class="pricing-header firstch c4">
+										<p>$2500/Month</p>
+										<h4>Ultimate</h4>
+									</div><!-- end pricing-header -->
+									<ul>
+										<li>High</li>
+										<li>3 Keywords</li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-phone"></i> <i class="fa fa-skype"></i> <i class="fa fa-envelope"></i></li>
+									</ul>
+									<div class="pricing-footer text-center">
+										<a href="#" class="btn c4">ORDER NOW</a>
+									</div>
+								</div><!-- end col -->
+							</div><!-- end big-pricing -->
+						</div><!-- end tab-pane -->
+						<div role="tabpanel" class="tab-pane fade" id="profile">
+							<div class="row big-pricing">
+								<div class="col-md-4 col-sm-6 col-xs-12 colon1 nopad">
+									<div class="pricing-header firstch c0">
+										<p>Check our prices for SEO studies!</p>
+										<h4>Yearly SEO Packages</h4>
+									</div><!-- end pricing-header -->
+									<ul class="first-colon">
+										<li>Competition power 
+											<span>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="This is tooltip, you can add anything here.">
+												<i class="fa fa-info"></i>
+												</a>
+											</span>
+										</li>
+										<li>Keyword
+											<span>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="This is tooltip, you can add anything here.">
+												<i class="fa fa-info"></i>
+												</a>
+											</span>
+										</li>
+										<li>Rank Guarantee 
+											<span>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="This is tooltip, you can add anything here.">
+												<i class="fa fa-info"></i>
+												</a>
+											</span>
+										</li>
+										<li>Sectoral Agreement Limit
+											<span>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="This is tooltip, you can add anything here.">
+												<i class="fa fa-info"></i>
+												</a>
+											</span>
+										</li>
+										<li>In-Site SEO Analysis
+											<span>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="This is tooltip, you can add anything here.">
+												<i class="fa fa-info"></i>
+												</a>
+											</span>
+										</li>
+										<li><a href="#">Link Building</a> Analysis
+											<span>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="This is tooltip, you can add anything here.">
+												<i class="fa fa-info"></i>
+												</a>
+											</span>
+										</li>
+										<li>Sector and Competitor Analysis
+											<span>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="This is tooltip, you can add anything here.">
+												<i class="fa fa-info"></i>
+												</a>
+											</span>
+										</li>
+										<li>Sectoral Presentation Articles
+											<span>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="This is tooltip, you can add anything here.">
+												<i class="fa fa-info"></i>
+												</a>
+											</span>
+										</li>
+										<li>Blog Based SEO
+											<span>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="This is tooltip, you can add anything here.">
+												<i class="fa fa-info"></i>
+												</a>
+											</span>
+										</li>
+										<li>Social Media Support
+											<span>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="This is tooltip, you can add anything here.">
+												<i class="fa fa-info"></i>
+												</a>
+											</span>
+										</li>
+										<li>Duplicate Content Support
+											<span>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="This is tooltip, you can add anything here.">
+												<i class="fa fa-info"></i>
+												</a>
+											</span>
+										</li>
+										<li>Product Base SEO
+											<span>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="This is tooltip, you can add anything here.">
+												<i class="fa fa-info"></i>
+												</a>
+											</span>
+										</li>
+										<li>Local SEO Analysis
+											<span>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="This is tooltip, you can add anything here.">
+												<i class="fa fa-info"></i>
+												</a>
+											</span>
+										</li>
+										<li>W3 Validation Fix
+											<span>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="This is tooltip, you can add anything here.">
+												<i class="fa fa-info"></i>
+												</a>
+											</span>
+										</li>
+										<li>Site Speed Fix
+											<span>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="This is tooltip, you can add anything here.">
+												<i class="fa fa-info"></i>
+												</a>
+											</span>
+										</li>
+										<li>Harmful Link Analysis
+											<span>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="This is tooltip, you can add anything here.">
+												<i class="fa fa-info"></i>
+												</a>
+											</span>
+										</li>
+										<li>Support
+											<span>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="This is tooltip, you can add anything here.">
+												<i class="fa fa-info"></i>
+												</a>
+											</span>
+										</li>
+									</ul>
+								</div><!-- end col -->
+								<div class="col-md-2 col-sm-6 col-xs-12 colon1 nopad text-center">
+									<div class="pricing-header firstch c1">
+										<p>$1000/Yearly</p>
+										<h4>Beginner</h4>
+									</div><!-- end pricing-header -->
+									<ul>
+										<li>Aggressive</li>
+										<li>5 Keywords</li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-close"></i></li>
+										<li><i class="fa fa-close"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-close"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-close"></i></li>
+										<li><i class="fa fa-close"></i></li>
+										<li><i class="fa fa-close"></i></li>
+										<li><i class="fa fa-close"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-envelope"></i></li>
+									</ul>
+									<div class="pricing-footer text-center">
+										<a href="#" class="btn c1">ORDER NOW</a>
+									</div>
+								</div><!-- end col -->
+								<div class="col-md-2 col-sm-6 col-xs-12 colon1 nopad text-center">
+									<div class="pricing-header firstch c2">
+										<p>$5000/Yearly</p>
+										<h4>Premium</h4>
+									</div><!-- end pricing-header -->
+									<ul>
+										<li>Leader of Market</li>
+										<li>10 Keywords</li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-close"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-close"></i></li>
+										<li><i class="fa fa-close"></i></li>
+										<li><i class="fa fa-close"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-phone"></i> <i class="fa fa-envelope"></i></li>
+									</ul>
+									<div class="pricing-footer text-center">
+										<a href="#" class="btn c2">ORDER NOW</a>
+									</div>
+								</div><!-- end col -->
+								<div class="col-md-2 col-sm-6 col-xs-12 colon1 nopad text-center">
+									<div class="pricing-header firstch c3">
+										<p>$15.000/Yearly</p>
+										<h4>Enterprise</h4>
+									</div><!-- end pricing-header -->
+									<ul>
+										<li>Leader of Sector</li>
+										<li>25 Keywords</li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-close"></i></li>
+										<li><i class="fa fa-close"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-phone"></i> <i class="fa fa-skype"></i> <i class="fa fa-envelope"></i></li>
+									</ul>
+									<div class="pricing-footer text-center">
+										<a href="#" class="btn c3">ORDER NOW</a>
+									</div>
+								</div><!-- end col -->
+								<div class="col-md-2 col-sm-6 col-xs-12 colon1 colon4 nopad text-center">
+									<div class="pricing-header firstch c4">
+										<p>$25.000/Yearly</p>
+										<h4>Ultimate</h4>
+									</div><!-- end pricing-header -->
+									<ul>
+										<li>High</li>
+										<li>3 Keywords</li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-check"></i></li>
+										<li><i class="fa fa-phone"></i> <i class="fa fa-skype"></i> <i class="fa fa-envelope"></i></li>
+									</ul>
+									<div class="pricing-footer text-center">
+										<a href="#" class="btn c4">ORDER NOW</a>
+									</div>
+								</div><!-- end col -->
+							</div><!-- end big-pricing -->
+						</div><!-- end tab-pane -->
+				  	</div><!-- end tab-content -->
+				</div><!-- end center-pricing -->
+                <hr class="invis">
+
+				<div class="row callout bgcolor">
+					<div class="col-md-9">
+						<p class="lead">We've hundreds of happy customers, do not you want to be a member of this family? Just join us increase your website visitors!</p>
+					</div>
+					<div class="col-md-3">
+						<div class="button-wrap text-center">
+							<a href="#" class="btn btn-transparent btn-light btn-lg">Contact us</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section ldp">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-md-2 col-sm-2 col-xs-6">
+						<div class="client-box">
+							<a href="#"><img src="upload/client_01.png" alt="" class="img-responsive"></a>
+						</div>
+					</div><!-- end col -->
+					<div class="col-md-2 col-sm-2 col-xs-6">
+						<div class="client-box">
+							<a href="#"><img src="upload/client_02.png" alt="" class="img-responsive"></a>
+						</div>
+					</div><!-- end col -->
+					<div class="col-md-2 col-sm-2 col-xs-6">
+						<div class="client-box">
+							<a href="#"><img src="upload/client_03.png" alt="" class="img-responsive"></a>
+						</div>
+					</div><!-- end col -->	
+					<div class="col-md-2 col-sm-2 col-xs-6">
+						<div class="client-box">
+							<a href="#"><img src="upload/client_04.png" alt="" class="img-responsive"></a>
+						</div>
+					</div><!-- end col -->
+					<div class="col-md-2 col-sm-2 col-xs-6">
+						<div class="client-box">
+							<a href="#"><img src="upload/client_05.png" alt="" class="img-responsive"></a>
+						</div>
+					</div><!-- end col -->
+					<div class="col-md-2 col-sm-2 col-xs-6">
+						<div class="client-box">
+							<a href="#"><img src="upload/client_06.png" alt="" class="img-responsive"></a>
+						</div>
+					</div><!-- end col -->	
+				</div><!-- end row -->
+			</div><!-- end container -->
+		</section><!-- end section -->
+
+		<footer class="footer primary-footer">
+            <div class="container">
                 <div class="row">
-                  <!-- Start Single Blog -->
-                  <div class="col-lg-4 col-md-4 col-sm-4">
-                    <div class="single-Blog">
-                      <div class="single-blog-left">
-                        <ul class="blog-comments-box">
-                          <li>May <h2>10</h2>2015</li>
-                          <li><span class="fa fa-eye"></span>1523</li>
-                          <li><a href="#"><span class="fa fa-comments"></span>5</a></li>
-                        </ul>
-                      </div>
-                      <div class="single-blog-right">
-                        <div class="blog-img">
-                          <figure class="blog-figure">
-                           <a href="#"><img src="images/choose-us-img3.jpg" alt="img"></a>
-                            <span class="image-effect"></span>
-                          </figure>
-                        </div>
-                        <div class="blog-author">
-                          <ul>
-                            <li>By <a href="#">Dr. Smith</a></li>
-                            <li>In <a href="#">Dental</a></li>
-                          </ul>
-                        </div>
-                        <div class="blog-content">
-                          <h2>Latest Trend Of Medical Dental Department</h2>
-                          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                          <div class="readmore_area">
-                            <a href="#" data-hover="Read More"><span>Read More</span></a>                
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                   <!-- Start Single Blog -->
-                  <div class="col-lg-4 col-md-4 col-sm-4">
-                    <div class="single-Blog">
-                      <div class="single-blog-left">
-                        <ul class="blog-comments-box">
-                          <li>May <h2>10</h2>2015</li>
-                          <li><span class="fa fa-eye"></span>1523</li>
-                          <li><a href="#"><span class="fa fa-comments"></span>5</a></li>
-                        </ul>
-                      </div>
-                      <div class="single-blog-right">
-                         <div class="blog-img">
-                          <figure class="blog-figure">
-                           <a href="#"><img src="images/choose-us-img3.jpg" alt="img"></a>
-                            <span class="image-effect"></span>
-                          </figure>
-                        </div>
-                        <div class="blog-author">
-                          <ul>
-                            <li>By <a href="#">Dr. Smith</a></li>
-                            <li>In <a href="#">Dental</a></li>
-                          </ul>
-                        </div>
-                        <div class="blog-content">
-                          <h2>Latest Trend Of Medical Dental Department</h2>
-                          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                          <div class="readmore_area">
-                            <a href="#" data-hover="Read More"><span>Read More</span></a>                
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                   <!-- Start Single Blog -->
-                  <div class="col-lg-4 col-md-4 col-sm-4">
-                    <div class="single-Blog">
-                      <div class="single-blog-left">
-                        <ul class="blog-comments-box">
-                          <li>May <h2>10</h2>2015</li>
-                          <li><span class="fa fa-eye"></span>1523</li>
-                          <li><a href="#"><span class="fa fa-comments"></span>5</a></li>
-                        </ul>
-                      </div>
-                      <div class="single-blog-right">
-                         <div class="blog-img">
-                          <figure class="blog-figure">
-                           <a href="#"><img src="images/choose-us-img3.jpg" alt="img"></a>
-                            <span class="image-effect"></span>
-                          </figure>
-                        </div>
-                        <div class="blog-author">
-                          <ul>
-                            <li>By <a href="#">Dr. Smith</a></li>
-                            <li>In <a href="#">Dental</a></li>
-                          </ul>
-                        </div>
-                        <div class="blog-content">
-                          <h2>Latest Trend Of Medical Dental Department</h2>
-                          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                          <div class="readmore_area">
-                            <a href="#" data-hover="Read More"><span>Read More</span></a>                
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>             
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--=========== End Home Blog SECTION ================-->
+                    <div class="col-md-4 col-sm-4">
+                    	<div class="widget clearfix">
+                    		<h4 class="widget-title">Subscribe</h4>
+                    		<div class="newsletter-widget">
+                    			<p>You can opt out of our newsletters at any time. See our privacy policy.</p>
+		                        <form class="form-inline" role="search">
+		                            <div class="form-1">
+		                              	<input type="text" class="form-control" placeholder="Enter email here..">
+										<button type="submit" class="btn btn-primary"><i class="fa fa-envelope-o"></i></button>
+		                            </div>
+								</form>
+                    		</div><!-- end newsletter -->
+                    	</div><!-- end widget -->
+                    </div><!-- end col -->
+                    <div class="col-md-2 col-sm-2">
+                    	<div class="widget clearfix">
+                    		<h4 class="widget-title">Company</h4>
+                    		<ul>
+                    			<li><a href="#">About us</a></li>
+                    			<li><a href="#">Carrier</a></li>
+                    			<li><a href="#">Trademark</a></li>
+                    			<li><a href="#">Contact</a></li>
+                    		</ul>
+                    	</div><!-- end widget -->
+                    </div><!-- end col -->
 
-    <!--=========== Start Footer SECTION ================-->
-    <footer id="footer">
-      <!-- Start Footer Top -->
-      <div class="footer-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-3">
-              <div class="single-footer-widget">
-                <div class="section-heading">
-                <h2>About Us</h2>
-                <div class="line"></div>
-              </div>           
-              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3">
-              <div class="single-footer-widget">
-                <div class="section-heading">
-                <h2>Our Service</h2>
-                <div class="line"></div>
-              </div>
-              <ul class="footer-service">
-                <li><a href="#"><span class="fa fa-check"></span>Service 1</a></li>
-                <li><a href="#"><span class="fa fa-check"></span>Service 2</a></li>
-                <li><a href="#"><span class="fa fa-check"></span>Service 3</a></li>
-                <li><a href="#"><span class="fa fa-check"></span>Service 4</a></li>
-                <li><a href="#"><span class="fa fa-check"></span>Service 5</a></li>
-              </ul>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3">
-              <div class="single-footer-widget">
-                <div class="section-heading">
-                <h2>Tags</h2>
-                <div class="line"></div>
-              </div>
-                <ul class="tag-nav">
-                  <li><a href="#">Dental</a></li>
-                  <li><a href="#">Surgery</a></li>
-                  <li><a href="#">Pediatric</a></li>
-                  <li><a href="#">Cardiac</a></li>
-                  <li><a href="#">Ophthalmology</a></li>
-                  <li><a href="#">Diabetes</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3">
-              <div class="single-footer-widget">
-                <div class="section-heading">
-                <h2>Contact Info</h2>
-                <div class="line"></div>
-              </div>
-              <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
-              <address class="contact-info">
-                <p><span class="fa fa-home"></span>305 Intergraph Way
-                Madison, AL 35758, USA</p>
-                <p><span class="fa fa-phone"></span>1.256.730.2000</p>
-                <p><span class="fa fa-envelope"></span>info@wpfmedinova.com</p>
-              </address>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Start Footer Middle -->
-      <div class="footer-middle">
-        <div class="container">
-          <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <div class="footer-copyright">
-              <p>&copy; Copyright 2021 <a href="index.html">GHC Gestor de Historiales Clínicos</a></p>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <div class="footer-social">              
-                <a href="#"><span class="fa fa-facebook"></span></a>
-                <a href="#"><span class="fa fa-twitter"></span></a>
-                <a href="#"><span class="fa fa-google-plus"></span></a>
-                <a href="#"><span class="fa fa-linkedin"></span></a>     
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-      <!-- Start Footer Bottom -->
-      <div class="footer-bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <p>Diseñado & Desarrollado Por <a rel="nofollow" href="http://www.wpfreeware.com/">GHC Gestor de Historiales Clínicos</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!--=========== End Footer SECTION ================-->
+                    <div class="col-md-2 col-sm-2">
+                    	<div class="widget clearfix">
+                    		<h4 class="widget-title">Services</h4>
+                    		<ul>
+                    			<li><a href="#">Design & Dev</a></li>
+                    			<li><a href="#">ASP.NET</a></li>
+                    			<li><a href="#">PHP Development</a></li>
+                    			<li><a href="#">Mobile App</a></li>
+                    			<li><a href="#">Oracle</a></li>
+                    		</ul>
+                    	</div><!-- end widget -->
+                    </div><!-- end col -->
 
-    <!-- jQuery Library  -->
-    <script src="js/jquery.js"></script>    
-    <!-- Bootstrap default js -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- slick slider -->
-    <script src="js/slick.min.js"></script>    
-    <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>      
-    <!-- counter -->
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <!-- Doctors hover effect -->
-    <script src="js/snap.svg-min.js"></script>
-    <script src="js/hovers.js"></script>
-    <!-- Photo Swipe Gallery Slider -->
-    <script src='js/photoswipe.min.js'></script>
-    <script src='js/photoswipe-ui-default.min.js'></script>    
-    <script src="js/photoswipe-gallery.js"></script>
+                    <div class="col-md-2 col-sm-2">
+                    	<div class="widget clearfix">
+                    		<h4 class="widget-title">Download</h4>
+                    		<ul>
+                    			<li><a href="#">MAC/OSX</a></li>
+                    			<li><a href="#">Android</a></li>
+                    			<li><a href="#">Windows</a></li>
+                    			<li><a href="#">Google Play</a></li>
+                    			<li><a href="#">Amazon</a></li>
+                    		</ul>
+                    	</div><!-- end widget -->
+                    </div><!-- end col -->
 
-    <!-- Custom JS -->
-    <script src="js/custom.js"></script>
-     
-  </body>
+                    <div class="col-md-2 col-sm-2">
+                    	<div class="widget clearfix">
+                    		<h4 class="widget-title">Be Social</h4>
+                    		<ul>
+                    			<li><a href="#">Facebook</a></li>
+                    			<li><a href="#">Twitter</a></li>
+                    			<li><a href="#">Google+</a></li>
+                    			<li><a href="#">Linkedin</a></li>
+                    		</ul>
+                    	</div><!-- end widget -->
+                    </div><!-- end col -->
+                </div><!-- end row -->
+           	</div><!-- end container -->
+		</footer><!-- end primary-footer -->
+
+		<footer class="footer secondary-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p>2010 - 2018 &copy;The <a href="#">SeoTime</a> SEO Solutions INC. All rights reserved.</p>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <ul class="list-inline">
+                            <li>Designed: <a href="https://html.design">HTML Design</a></li>
+                        </ul>
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+		</footer><!-- end second footer -->
+	</div><!-- end wrapper -->
+
+	<!-- jQuery Files -->
+	<script src="plantilla/js/jquery.min.js"></script>
+	<script src="plantilla/js/bootstrap.min.js"></script>
+	<script src="plantilla/js/parallax.js"></script>
+	<script src="plantilla/js/animate.js"></script>
+	<script src="plantilla/js/owl.carousel.js"></script>
+	<script src="plantilla/js/custom.js"></script>
+
+</body>
+</html>div class="button-wrap text-center">
+							<a href="#" class="btn btn-transparent btn-light btn-lg">Contact us</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section ldp">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-md-2 col-sm-2 col-xs-6">
+						<div class="client-box">
+							<a href="#"><img src="upload/client_01.png" alt="" class="img-responsive"></a>
+						</div>
+					</div><!-- end col -->
+					<div class="col-md-2 col-sm-2 col-xs-6">
+						<div class="client-box">
+							<a href="#"><img src="upload/client_02.png" alt="" class="img-responsive"></a>
+						</div>
+					</div><!-- end col -->
+					<div class="col-md-2 col-sm-2 col-xs-6">
+						<div class="client-box">
+							<a href="#"><img src="upload/client_03.png" alt="" class="img-responsive"></a>
+						</div>
+					</div><!-- end col -->	
+					<div class="col-md-2 col-sm-2 col-xs-6">
+						<div class="client-box">
+							<a href="#"><img src="upload/client_04.png" alt="" class="img-responsive"></a>
+						</div>
+					</div><!-- end col -->
+					<div class="col-md-2 col-sm-2 col-xs-6">
+						<div class="client-box">
+							<a href="#"><img src="upload/client_05.png" alt="" class="img-responsive"></a>
+						</div>
+					</div><!-- end col -->
+					<div class="col-md-2 col-sm-2 col-xs-6">
+						<div class="client-box">
+							<a href="#"><img src="upload/client_06.png" alt="" class="img-responsive"></a>
+						</div>
+					</div><!-- end col -->	
+				</div><!-- end row -->
+			</div><!-- end container -->
+		</section><!-- end section -->
+
+		<footer class="footer primary-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                    	<div class="widget clearfix">
+                    		<h4 class="widget-title">Subscribe</h4>
+                    		<div class="newsletter-widget">
+                    			<p>You can opt out of our newsletters at any time. See our privacy policy.</p>
+		                        <form class="form-inline" role="search">
+		                            <div class="form-1">
+		                              	<input type="text" class="form-control" placeholder="Enter email here..">
+										<button type="submit" class="btn btn-primary"><i class="fa fa-envelope-o"></i></button>
+		                            </div>
+								</form>
+                    		</div><!-- end newsletter -->
+                    	</div><!-- end widget -->
+                    </div><!-- end col -->
+                    <div class="col-md-2 col-sm-2">
+                    	<div class="widget clearfix">
+                    		<h4 class="widget-title">Company</h4>
+                    		<ul>
+                    			<li><a href="#">About us</a></li>
+                    			<li><a href="#">Carrier</a></li>
+                    			<li><a href="#">Trademark</a></li>
+                    			<li><a href="#">Contact</a></li>
+                    		</ul>
+                    	</div><!-- end widget -->
+                    </div><!-- end col -->
+
+                    <div class="col-md-2 col-sm-2">
+                    	<div class="widget clearfix">
+                    		<h4 class="widget-title">Services</h4>
+                    		<ul>
+                    			<li><a href="#">Design & Dev</a></li>
+                    			<li><a href="#">ASP.NET</a></li>
+                    			<li><a href="#">PHP Development</a></li>
+                    			<li><a href="#">Mobile App</a></li>
+                    			<li><a href="#">Oracle</a></li>
+                    		</ul>
+                    	</div><!-- end widget -->
+                    </div><!-- end col -->
+
+                    <div class="col-md-2 col-sm-2">
+                    	<div class="widget clearfix">
+                    		<h4 class="widget-title">Download</h4>
+                    		<ul>
+                    			<li><a href="#">MAC/OSX</a></li>
+                    			<li><a href="#">Android</a></li>
+                    			<li><a href="#">Windows</a></li>
+                    			<li><a href="#">Google Play</a></li>
+                    			<li><a href="#">Amazon</a></li>
+                    		</ul>
+                    	</div><!-- end widget -->
+                    </div><!-- end col -->
+
+                    <div class="col-md-2 col-sm-2">
+                    	<div class="widget clearfix">
+                    		<h4 class="widget-title">Be Social</h4>
+                    		<ul>
+                    			<li><a href="#">Facebook</a></li>
+                    			<li><a href="#">Twitter</a></li>
+                    			<li><a href="#">Google+</a></li>
+                    			<li><a href="#">Linkedin</a></li>
+                    		</ul>
+                    	</div><!-- end widget -->
+                    </div><!-- end col -->
+                </div><!-- end row -->
+           	</div><!-- end container -->
+		</footer><!-- end primary-footer -->
+
+		<footer class="footer secondary-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p>2010 - 2018 &copy;The <a href="#">SeoTime</a> SEO Solutions INC. All rights reserved.</p>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <ul class="list-inline">
+                            <li>Designed: <a href="https://html.design">HTML Design</a></li>
+                        </ul>
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+		</footer><!-- end second footer -->
+	</div><!-- end wrapper -->
+
+	<!-- jQuery Files -->
+	<script src="plantilla/js/jquery.min.js"></script>
+	<script src="plantilla/js/bootstrap.min.js"></script>
+	<script src="plantilla/js/parallax.js"></script>
+	<script src="plantilla/js/animate.js"></script>
+	<script src="plantilla/js/owl.carousel.js"></script>
+	<script src="plantilla/js/custom.js"></script>
+
+</body>
 </html>
