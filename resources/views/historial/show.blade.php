@@ -31,11 +31,16 @@
                         </div>
                         <div class="form-group">
                             <strong>Firma Historial:</strong>
-                            {{ $historial->FirmaPaciente}}
+                            <img src="{{ $historial->FirmaPaciente}}" class="img-fluid"width="130px" height="130px"  max-width="130px" max-height="130px">
                         </div>
                         <div class="form-group">
                             <strong>Estado Historial:</strong>
-                            {{ $historial->estadoHistorial}}
+                            @if ($historial->estadoHistorial == 0)
+                                                    Inactivo
+                                                @endif
+                                                @if ($historial->estadoHistorial == 1)
+                                                    Activo
+                                                @endif</td>
                         </div>
                     </div>
                 </div>

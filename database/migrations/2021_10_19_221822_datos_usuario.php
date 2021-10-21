@@ -15,8 +15,10 @@ class DatosUsuario extends Migration
     {
         Schema::create('usuarios', function (Blueprint $table) {
             $table->bigIncrements('idDat');
-            $table->string('Nombre');
+            $table->string('name');
             $table->string('Apellido');
+            $table->string('email');
+            $table->string('password');
             $table->string('Edad');
             $table->string('Direccion');
             $table->string('Telefono');    

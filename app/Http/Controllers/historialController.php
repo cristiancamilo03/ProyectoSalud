@@ -62,7 +62,7 @@ class historialController extends Controller
         $nuevoHistorial->DescripcionHistorial= $request->input("descripcionHistorial");
         $nuevoHistorial->Direccion= $request->input("direccionPaciente");
         $nuevoHistorial->Telefono= $request->input("telefonoPaciente");
-       
+        $nuevoHistorial->estadoHistorial= $request->input("estadoHistorial");
         $nuevoHistorial->save();
         return redirect("historial")->with('mensaje_exito' , "Historial Creado");
     }
@@ -111,6 +111,7 @@ class historialController extends Controller
         $historial->DescripcionHistorial = $request->input('descripcionHistorial');
         $historial->Direccion = $request->input('direccionPaciente');
         $historial->Telefono = $request->input('telefonoPaciente');
+        $historial->estadoHistorial = $request->input('estadoHistorial');
 
         $historial->save();
         return redirect("historial")->with('mensaje_exito' , "Historial Actualizado");

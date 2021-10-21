@@ -1,4 +1,4 @@
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <section class="content container-fluid">
         <div class="row">
             <div class="col-md-12">
@@ -25,7 +25,20 @@
                             
                         </div>
                         </div>
-
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="textinput">Correo</label>  
+                            <div class="col-md-4">
+                            <input id="textinput" name="email" type="email" placeholder="" class="form-control input-md">
+                                
+                            </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="textinput">Contraseña</label>  
+                                <div class="col-md-4">
+                                <input id="textinput" name="password" type="password" placeholder="" class="form-control input-md">
+                                    
+                                </div>
+                                </div>
                         <!-- Text input-->
                         <div class="form-group">
                         <label class="col-md-4 control-label" for="textinput">Edad</label>  
@@ -52,7 +65,15 @@
                             
                         </div>
                         </div>
-
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="selectbasic">Estado Usuario</label>
+                            <div class="col-md-4">
+                                <select id="selectbasic" name="estadoUsuario" class="form-control">
+                                <option value="1">Activo</option>
+                                <option value="0">Inactivo</option>
+                                </select>
+                            </div>
+                            </div>
                         <!-- Button -->
                         <div class="form-group">
                         <label class="col-md-4 control-label" for="singlebutton"></label>

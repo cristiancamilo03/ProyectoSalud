@@ -42,6 +42,8 @@ Route::get('acerca-nosotros', function () {
     return view ('plantilla.about-us');
 });
 
+Route::resource('Lector', 'lectorImagenesController');
+
 Route::get('login' , 'inicioController@form');
 
 Route::post('login' , 'inicioController@login')->name('login.verify');

@@ -39,11 +39,14 @@ class DatController extends Controller
     public function store(Request $request)
     {
         $datosusu = new DatosPersonales();
-        $datosusu->Nombre = $request->input('nombreUsu');
+        $datosusu->name = $request->input('nombreUsu');
         $datosusu->Apellido = $request->input('apellidoUsu');
+        $datosusu->email = $request->input('email');
+        $datosusu->password = $request->input('password');
         $datosusu->Edad = $request->input('edadUsu');
         $datosusu->Direccion = $request->input('direccionUsu');
         $datosusu->Telefono = $request->input('telefonoUsu');
+        $datosusu->Estado = $request->input('estadoUsuario');
         $datosusu->save();
         echo "Usuario Guardado";
     }

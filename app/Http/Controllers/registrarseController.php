@@ -18,7 +18,7 @@ class registrarseController extends Controller
      */
     public function index()
     {
-       
+        return view('inicioSesion.registrarse');
     }
 
     /**

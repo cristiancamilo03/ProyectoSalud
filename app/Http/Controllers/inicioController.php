@@ -22,9 +22,9 @@ class inicioController extends Controller
              ])){
             //Usuario autenticado
             return redirect()->route('historial.index');
-             }else {
-                //Usuario no autenticado
-                return redirect()->route('inicioSesion.login')->with('mensaje', "Usuario no reconocido");
+        }else {
+            //Usuario no autenticado
+                return view('inicioSesion.login')->with('mensaje', "Usuario no reconocido");
              }
 
     }

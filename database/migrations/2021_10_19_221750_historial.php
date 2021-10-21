@@ -13,7 +13,7 @@ class Historial extends Migration
      */
     public function up()
     {
-        Schema::create('historialClinico', function (Blueprint $table) {
+        Schema::create('historial', function (Blueprint $table) {
             $table->bigIncrements('idHistorial');
             $table->string('NombrePaciente');
             $table->string('ApellidoPaciente');

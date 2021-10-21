@@ -43,7 +43,7 @@
                         <div class="form-group">
                         <label class="col-md-4 control-label" for="textinput">Fecha Historial</label>  
                         <div class="col-md-4">
-                        <input value="{{$historial->FechaHistorial}}" id="textinput" name="fechaHistorial" type="date" placeholder="" class="form-control input-md" >
+                        <input value="{{$historial->FechaHistorial}}" id="textinput" name="fechaHistorial" type="date" placeholder="" class="form-control input-md">
                             
                         </div>
                         </div>
@@ -79,7 +79,7 @@
                         <div class="form-group">
                         <label class="col-md-4 control-label" for="textinput">Firma</label>  
                         <div class="col-md-4">
-                        <input value="{{$historial->FirmaPaciente}}" id="textinput" name="firmaPaciente" type="file" placeholder="" class="form-control input-md" >
+                        <input value="{{$historial->FirmaPaciente}}" id="textinput" name="firmaPaciente" type="file" placeholder="" class="form-control input-md" disabled>
                             
                         </div>
                         </div>

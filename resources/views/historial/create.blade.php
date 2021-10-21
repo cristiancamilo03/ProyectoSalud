@@ -93,7 +93,7 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="selectbasic">Estado Historial</label>
                             <div class="col-md-4">
-                                <select id="selectbasic" name="estadoHistorial" class="form-control" value="{{$historial->estadoHistorial}}">
+                                <select id="selectbasic" name="estadoHistorial" class="form-control">
                                 <option value="1">Activo</option>
                                 <option value="0">Inactivo</option>
                                 </select>
