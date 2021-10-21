@@ -281,7 +281,7 @@
 
 					<div class="col-md-4">
                         <div class="milestone-counter c3">
-                            <img src="images/icon_09.png" alt="" class="alignleft">
+                            <img src="../css/icon_09.png" alt="" class="alignleft">
                             <h3 class="stat-count">890</h3>
                             <p>Great Results</p>
                         </div>
@@ -292,7 +292,7 @@
 
 		<section class="section lb nopad spotlight style1">
 		    <div class="image col-md-4 hidden-sm hidden-xs">
-		        <img src="upload/blog_alt_06.jpg" alt="" />
+		        <img src="../css/blog_alt_06.jpg" alt="" />
 		    </div>
 		    <div class="content">
 		        <h2>Be the leader in the sector</h2>
