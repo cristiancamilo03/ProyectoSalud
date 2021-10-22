@@ -1,2 +1,2 @@
-##GHC Project
+## GHC Project
 
