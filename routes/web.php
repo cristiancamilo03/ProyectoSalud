@@ -1,7 +1,5 @@
 <?php
 
-use App\Http\Controllers\Auth\LoginController;
-use App\Http\Controllers\PDFPrueba;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,11 +25,13 @@ Route::get('prueba', function () {
 
 Route::resource('datos' , 'DatController');
 
+Route::get('datos/{idDat}/habilitar', "DatController@habilitar");
+
 Route::resource('historial', 'historialController')->middleware('estado');
 
 Route::resource('registrarse', 'registrarseController');
 
-Route::get('first', function () {
+Route::get('inicio', function () {
     return view('plantilla.index');
 });
 

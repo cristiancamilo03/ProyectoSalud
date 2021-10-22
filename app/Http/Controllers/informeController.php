@@ -2,8 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\validacionesRequest;
 use Illuminate\Http\Request;
 use App\informeModel;
+
+
+
 class informeController extends Controller
 {
     /**

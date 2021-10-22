@@ -1,6 +1,7 @@
 @extends('layouts.navbar')
 
 @section('header')
+<link rel="shortcut icon" href="../css/iconoG.ico" type="image/x-icon" />
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <head>
@@ -56,10 +57,6 @@
 
                         <fieldset>
 
-                        <!-- Form Name -->
-                       
-
-                        <!-- Text input-->
                         <div class="form-group">
                         <label class="col-md-4 control-label" for="textinput">Nombre</label>  
                         
@@ -338,7 +335,7 @@
                                                                         <textarea name="observaciones" class="form-control"></textarea>     
                                                                         </div>                                                                 
                         <!-- Button -->
-                        <center>
+                    
                             <div class="form-group">
                             <label class="col-md-4 control-label" for="singlebutton"></label>
                             <div class="col-md-4">
@@ -346,7 +343,7 @@
                                 <a class="btn btn-info" href="{{ url('informes') }}"> Volver</a>
                             </div>
                             </div>
-                        </center>
+ 
                         </fieldset>
                         </form>
                     </div>

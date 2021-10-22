@@ -234,26 +234,26 @@ class plantillaPDF extends Controller
             $pdf->Cell(35,6, $dato->sonda, 'LTRB' , 0,'C');
             $pdf->Cell(40,6, $dato->liquidoE, 'LTRB' , 0,'C');
             $pdf->SetXY(05, 83);
-            $pdf->Cell(250,6, 'OBSERVACIONES', 'LTRB' , 0,'L');
+            $pdf->Cell(250,6, 'OBSERVACIONES', 'LTRB' , 0,'C');
             $pdf->SetXY(05, 89);
             $pdf->Cell(250,6, $dato->observaciones, 'LTRB' , 1,'L');
-            $pdf->SetXY(05, 95);
-            $pdf->Cell(290,6, 'OBSERVACIONES');
-            $pdf->SetXY(05, 100);
+            $pdf->SetXY(05, 105);
+            $pdf->Cell(290,6, 'OBSERVACIONES' );
+            $pdf->SetXY(05, 110);
             $pdf->Cell(290,6, '', 'LTRB' , 0,'C');
-            $pdf->SetXY(05, 106);
+            $pdf->SetXY(05, 116);
             $pdf->Cell(290,6, '', 'LTRB' , 0,'C');
-            $pdf->SetXY(05, 112);
+            $pdf->SetXY(05, 122);
             $pdf->Cell(290,6, '', 'LTRB' , 0,'C');
-            $pdf->SetXY(05, 118);
+            $pdf->SetXY(05, 128);
             $pdf->Cell(290,6, '', 'LTRB' , 0,'C');
-            $pdf->SetXY(05, 124);
+            $pdf->SetXY(05, 134);
             $pdf->Cell(290,6, '', 'LTRB' , 0,'C');
-            $pdf->SetXY(05, 130);
+            $pdf->SetXY(05, 140);
             $pdf->Cell(290,6, '', 'LTRB' , 0,'C');
-            $pdf->SetXY(05, 136);
+            $pdf->SetXY(05, 146);
             $pdf->Cell(290,6, '', 'LTRB' , 0,'C');
-            $pdf->SetXY(05, 142);
+            $pdf->SetXY(05, 152);
             $pdf->Cell(290,6, '', 'LTRB' , 0,'C');
     
     

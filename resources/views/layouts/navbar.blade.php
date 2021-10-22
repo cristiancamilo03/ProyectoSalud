@@ -1,5 +1,7 @@
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <link rel="stylesheet" href="css/navbar.css">
+<link rel="shortcut icon" href="../css/iconoG.ico" type="image/x-icon" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
 
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-info">
@@ -19,27 +21,22 @@
               <a class="nav-link active" aria-current="page" href="{{url('../../datos')}}">Usuarios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="{{url('perfil/' . Auth::user()->idDat . "/edit")}}">Editar Perfil</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="{{url('informes')}}">Informes</a>
-            </li>
-            
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                Opciones
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="{{url('perfil/' . Auth::user()->idDat . "/edit")}}">Editar Perfil</a></li>
-                <li><a class="dropdown-item" href="{{ route('logout')}}">Cerrar Sesión</a></li>
+            </li>         
+            <li class="dropdown" style="position:absolute; right: 40px">
+              <a class="nav-link active" data-toggle="dropdown" href="#">
+                  <i class="fa fa-cog fa-fw"></i> Opciones <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                  <li><a href="{{ route('logout')}}">Cerrar Sesion</a>
+                  </li>
+                  <li><a href="{{url('perfil/' . Auth::user()->idDat . "/edit")}}"> Editar Perfil</a>
+                  </li>
               </ul>
-            </div>
-            
-            
+            </li>
           </ul>
         </div>
       </div>
 </nav>
-
 
 @yield('header')

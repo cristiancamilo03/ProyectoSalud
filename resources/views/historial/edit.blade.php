@@ -1,12 +1,36 @@
 @extends('layouts.navbar')
 
 @section('header')
+<link rel="shortcut icon" href="../css/iconoG.ico" type="image/x-icon" />
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>GHC| Crear Historial</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- MetisMenu CSS -->
+        <link href="../css/metisMenu.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="../css/startmin.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/navbar.css">
+
+        <!-- Custom Fonts -->
+        <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    </head>
 <center>
-<section class="content container-fluid">
+<section class="content container-fluid" style="margin: 40px 0">
     <div class="">
-        <div class="col-md-12">
+        <div class="col-md-8">
             <div class="card card-default">
                 <div class="card-header">
                     <span class="card-title">Actualizar Historial Clínico</span>

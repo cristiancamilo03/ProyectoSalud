@@ -129,27 +129,7 @@ class historialController extends Controller
             ->with('success', 'Historialclinico deleted successfully');
     }
 
-    public function habilitar($id){
-        $historial = historialModel::find($id);
-        switch($historial->habilitado){
-            case null:
-                $historial->habilitado=1;
-                $historial->save();
-                $mensaje_exito = 'Historial Habilitado';
-                break;
-            case 1:
-                $historial->habilitado=2;
-                $historial->save();
-                $mensaje_exito = 'Historial Desactivado';
-                break;
-            case 2:
-                $historial->habilitado=1;
-                $historial->save();
-                $mensaje_exito = 'Historial Activado';
-                break;
-        }
-        return redirect('historiales')->with('mensaje_exito', $mensaje_exito);
-    }
+    
 
 
 }

@@ -1,8 +1,7 @@
 @extends('layouts.navbar')
 
 @section('header')
-    
-
+<link rel="shortcut icon" href="../css/iconoG.ico" type="image/x-icon" />
 <script src="https://kit.fontawesome.com/e0a1bf980c.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="./css/style.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -16,8 +15,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <div class="container-fluid">
-    <div class="container-fluid">
+    
+    <div class="container-fluid" style="margin: 40px 0">
         <div class="row">
             <div class="col-sm-12">
                 <div class="card">
@@ -41,10 +40,10 @@
 										<th>Direccion</th>
 										<th>Telefono</th>
 										<th>Firma Medico</th>
+                                        <th>Ver Firma</th>
                                         <th>Estado Historial</th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
+                                        <th>Detalle</th>
+                                        <th>Editar</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -82,11 +81,7 @@
                                                 <i class="icono1 fas fa-pencil-alt"></i>
                                             </a>
                                             </td>
-                                            <td>
-                                                <a href="{{ url('pdf/'. $historialclinico->idHistorial)}}">
-                                                <i class="icono3 far fa-file-pdf"></i>
-                                                </a>
-                                            </td>
+                                            
                                         </tr>
                                     @endforeach
                                 </tbody>

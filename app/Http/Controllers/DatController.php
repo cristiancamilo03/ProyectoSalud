@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\DatosPersonales;
 
-
 class DatController extends Controller
 {
     /**
@@ -104,5 +103,27 @@ class DatController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function habilitar($idDat){
+        $historial = DatosPersonales::find($idDat);
+        switch($historial->Estado){
+            case null:
+                $historial->Estado=1;
+                $historial->save();
+                $mensaje_exito = 'Usuario Habilitado';
+                break;
+            case 1:
+                $historial->Estado=2;
+                $historial->save();
+                $mensaje_exito = 'Usuario Desactivado';
+                break;
+            case 2:
+                $historial->Estado=1;
+                $historial->save();
+                $mensaje_exito = 'Usuario Activado';
+                break;
+        }
+        return redirect('datos')->with('mensaje_exito', $mensaje_exito);
     }
 }

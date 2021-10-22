@@ -1,26 +1,26 @@
 @extends('layouts.navbar')
 
 @section('header')
+<link rel="shortcut icon" href="../css/iconoG.ico" type="image/x-icon" />
 <script src="https://kit.fontawesome.com/e0a1bf980c.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="./css/style.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
-/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <div class="container-fluid">
+    <div class="container-fluid" style="margin: 40px 0">
         <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <a href="{{ route('datos.create') }}"<button class="btn btn-primary">Crear Datos Usuario</button></a>
+                        <a href="{{ route('datos.create') }}"<button class="btn btn-info">Crear Datos Usuario</button></a>
                     </div>
                     @if ( session("mesnaje_exito"))
                         <div>{{ session("mensaje_exito") }} </div>
@@ -38,8 +38,8 @@
 										<th>Direccion de residencia</th>
 										<th>Telefono usuario</th>
                                         <th>Estado Usuario</th>
-                                        <th></th>
-                                        <th></th>
+                                        <th>Detalle</th>
+                                        <th>Editar</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -51,12 +51,28 @@
 											<td>{{ $dato->Edad }}</td>
 											<td>{{ $dato->Direccion }}</td>
 											<td>{{ $dato->Telefono }}</td>
-                                            <td>@if ($dato->Estado == 0)
-                                                Inactivo
-                                            @endif
-                                            @if ($dato->Estado == 1)
-                                                Activo
-                                            @endif</td>
+                                            <td>
+                                                @switch($dato->Estado)
+                                                    @case(null)
+                                                    <a href="{{ url('datos/' . $dato->idDat . "/habilitar") }}">
+                                                        Asignar estado
+                                                    </a>
+                                                    @break
+                                                    @case(1)
+                                                    <strong class="text-success">Usuario hablilitado</strong>
+                                                    <a href="{{ url('datos/' . $dato->idDat . "/habilitar") }}">
+                                                        Deshabilitar
+                                                    </a>
+                                                    @break
+                                                    @case(2)
+                                                    <strong class="text-danger">Usuario deshabilitado</strong>
+                                                    <a href="{{ url('datos/' . $dato->idDat . "/habilitar") }}">
+                                                        Habilitar
+                                                    </a>
+                                                    @break
+                                                @endswitch
+    
+                                            </td>
                                             <td>
                                                 <a href="{{ url('datos/'. $dato->idDat)}}">
                                                 <i class="icono2 far fa-eye"></i>
@@ -67,6 +83,7 @@
                                                 <i class="icono1 fas fa-pencil-alt"></i>
                                             </a>
                                             </td>
+                                           
                                         </tr>
                                     @endforeach
                                 </tbody>

@@ -1,6 +1,7 @@
 @extends('layouts.navbar')
 
 @section('header')
+<link rel="shortcut icon" href="../css/iconoG.ico" type="image/x-icon" />
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <section class="content container-fluid">
         <div class="row">
@@ -32,10 +33,7 @@
                             <strong>Descripcion Historial:</strong>
                             {{ $historial->DescripcionHistorial }}
                         </div>
-                        <div class="form-group">
-                            <strong>Firma Historial:</strong>
-                            <img src="{{ $historial->FirmaPaciente}}" class="img-fluid"width="130px" height="130px"  max-width="130px" max-height="130px">
-                        </div>
+                        
                         <div class="form-group">
                             <strong>Estado Historial:</strong>
                             @if ($historial->estadoHistorial == 0)
