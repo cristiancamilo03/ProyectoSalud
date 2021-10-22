@@ -1,4 +1,4 @@
-<img src="https://www.lavanguardia.com/files/content_image_mobile_filter/uploads/2018/06/22/5fa433b8178fc.jpeg" alt="GHC Project"/>
+<img src="https://lh3.googleusercontent.com/s9bK8N3NN9eRxBpFz2VZqSLG9NnOcDWSwYYQzXFRnv-KpeCzM492fKohI8uAhLwohra__w=s170" width="50%" height="100%"alt="GHC Project"/>
 
 _Proyecto enfocado a la prestasción de servicios de la salud__
 
@@ -71,6 +71,6 @@ Instalacion de algunas librerias
 ---
 ⌨️ GHC Project (https://github.com/cristiancamilo03/ProyectoSalud.git) 😊
 
-<img src="public\logo.jpeg"/>
+<img src="https://lh3.googleusercontent.com/s9bK8N3NN9eRxBpFz2VZqSLG9NnOcDWSwYYQzXFRnv-KpeCzM492fKohI8uAhLwohra__w=s170" width="50%" height="100%"alt="GHC Project"/>
 
 
