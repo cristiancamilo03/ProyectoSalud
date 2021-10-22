@@ -2,11 +2,11 @@
 
 _Proyecto enfocado a la prestasción de servicios de la salud__
 
-## Comenzando 🚀
+## Comenzando📣
 
 ### Pre-requisitos 📋
 
-#### LENGUAJES 🔆 
+#### LENGUAJES 📜
 
 ```
 Desarrollado en Laravel 7,PHP,MYSQL,JS,CSS,HTML,Boostrap
@@ -66,7 +66,7 @@ Instalacion de algunas librerias
 3. Abrir en el navegador la siguiente direcciónn url: http://127.0.0.1:8000/inicio
 ```
 
-## © 2021 GHC Project ✒️
+## © 2021 GHC Project 💻
 
 ---
 ⌨️ GHC Project (https://github.com/cristiancamilo03/ProyectoSalud.git) 😊
