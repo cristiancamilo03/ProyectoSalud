@@ -71,6 +71,6 @@ Instalacion de algunas librerias
 ---
 ⌨️ GHC Project (https://github.com/cristiancamilo03/ProyectoSalud.git) 😊
 
-<img src="https://lh3.googleusercontent.com/s9bK8N3NN9eRxBpFz2VZqSLG9NnOcDWSwYYQzXFRnv-KpeCzM492fKohI8uAhLwohra__w=s170" width="50%" height="100%"alt="GHC Project"/>
+<img src="https://lh3.googleusercontent.com/s9bK8N3NN9eRxBpFz2VZqSLG9NnOcDWSwYYQzXFRnv-KpeCzM492fKohI8uAhLwohra__w=s170" alt="GHC Project"/>
 
 
