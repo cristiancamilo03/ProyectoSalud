@@ -24,17 +24,13 @@ nos facilita la gestión de bases de datos MySQL, el servidor web Apache
 [Paso a Paso Instalacion](https://docs.google.com/document/d/1Bhw7Dh78Y_3mRGV6LUHsdlj1JVczSdwI/edit?usp=sharing&ouid=109675321760699536418&rtpof=true&sd=true)
 
 
-[Paso a Paso Instalacion](http://www.fpdf.org/)
+
 #### FPDF 📲
 ```
 FPDF es una libreria de composer, que tiene como fin la creación de reportes mediante archivos PDF.
 ```
 
-```
-https://parzibyte.me/blog/2019/06/16/extraer-texto-imagenes-pdf-php/
-Realiza la extraccion de texto en images y pdf
-```
-[Paso a Paso Instalacion](https://docs.google.com/document/d/1gwBANFTu3Dk8tyZ3m6CUVAsMbi_NGr5p/edit?usp=sharing&ouid=109675321760699536418&rtpof=true&sd=true)
+[Paso a Paso Instalacion](http://www.fpdf.org/)
 
 #### COMPOSER 🖱
 ```
