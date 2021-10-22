@@ -115,9 +115,44 @@ class informeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request,$idInforme )
     {
-        //
+        $nuevoInforme = informeModel::find($idInforme);
+        $nuevoInforme->nombre= $request->input("nombre");
+        $nuevoInforme->edad= $request->input("edad");
+        $nuevoInforme->fechaNac= $request->input("fechaInforme");
+        $nuevoInforme->documento= $request->input("documentoInforme");
+        $nuevoInforme->entidad= $request->input("entidadInforme");
+        $nuevoInforme->direccion= $request->input("direccionInforme");
+        $nuevoInforme->telefono= $request->input("telefonoPaciente");
+        $nuevoInforme->diagnostico= $request->input("diagnostico");
+        $nuevoInforme->cuidador= $request->input("cuidadorP");
+        $nuevoInforme->conciencia= $request->input("conciencia");
+        $nuevoInforme->estadoPiel= $request->input("estadoP");
+        $nuevoInforme->drenajes= $request->input("drenaje");
+        $nuevoInforme->venopuncion= $request->input("venopuncion");
+        $nuevoInforme->alimentacion= $request->input("alimentacion");
+        $nuevoInforme->deposicion= $request->input("deposición");
+        $nuevoInforme->orina= $request->input("orina");
+        $nuevoInforme->oxigeno= $request->input("oxigeno");
+        $nuevoInforme->vomito= $request->input("vomito");
+        $nuevoInforme->hemovac= $request->input("hemovac");
+        $nuevoInforme->sonda= $request->input("sonda");
+        $nuevoInforme->liquidoE= $request->input("liquidoE");
+        $nuevoInforme->nombreMedicamento= $request->input("nombreM");
+        $nuevoInforme->presentacion= $request->input("presentacion");
+        $nuevoInforme->concentracion= $request->input("concentracion");
+        $nuevoInforme->posologia= $request->input("posologia");
+        $nuevoInforme->dilucion= $request->input("dilucion");
+        $nuevoInforme->viaAdmon= $request->input("viaAdmon");
+        $nuevoInforme->fecha= $request->input("fecha");
+        $nuevoInforme->hora= $request->input("hora");
+        $nuevoInforme->enfermero= $request->input("enfermero");
+        $nuevoInforme->viaAdministracion= $request->input("viaAdministracion");
+        $nuevoInforme->observaciones= $request->input("observaciones");
+        $nuevoInforme->estado= "Activo";
+        $nuevoInforme->save();
+        return redirect("informes")->with('mensaje_exito' , "Informe Creado");
     }
 
     /**

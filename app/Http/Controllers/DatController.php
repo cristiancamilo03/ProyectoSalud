@@ -80,18 +80,18 @@ class DatController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, DatosPersonales $id)
+    public function update(Request $request, $id)
     {
 
-        $dato = DatosPersonales::all();
+        $dato = DatosPersonales::find($id);
         $dato->name = $request->input('nombreDat');
         $dato->Apellido = $request->input('apellidoDat');
         $dato->email = $request->input('emailDat');
         $dato->Edad = $request->input('edadDat');
         $dato->Direccion = $request->input('direccionDat');
-        $dato->Telefono = $request->input('descripcionDat');
+        $dato->Telefono = $request->input('telefonoDat');
         $dato->save();
-        echo "Historial Actualizado";
+        return redirect('datos')->with('mensaje_exito',"Historial Actualizado");
     }
 
     /**

@@ -16,8 +16,8 @@
 <div class="login">
     <div class="form">
     <img src="../../css/Icono.svg"  alt="">
-      <input type="email" name="correoUsuario" placeholder="Correo">
-      <input type="password" name="contraseñaUsuario" placeholder="Contraseña">
+      <input type="email" name="correoUsuario" placeholder="Correo" required>
+      <input type="password" name="contraseñaUsuario" placeholder="Contraseña" required>
       <input type="submit" value="Iniciar Sesion" class="submit">
       <center>
       <a href="{{ url('registrarse/create' ) }}"<button class="btn btn-info">Registrarse</button></a>

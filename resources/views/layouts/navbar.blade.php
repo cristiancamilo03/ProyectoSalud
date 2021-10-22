@@ -27,7 +27,7 @@
               <a class="nav-link active" data-toggle="dropdown" href="#">
                   <i class="fa fa-cog fa-fw"></i> Opciones <b class="caret"></b>
               </a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu" style="text-decoration: none">
                   <li><a href="{{ route('logout')}}">Cerrar Sesion</a>
                   </li>
                   <li><a href="{{url('perfil/' . Auth::user()->idDat . "/edit")}}"> Editar Perfil</a>

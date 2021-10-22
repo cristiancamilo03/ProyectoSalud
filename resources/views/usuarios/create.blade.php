@@ -84,6 +84,7 @@
                         <label class="col-md-4 control-label" for="singlebutton"></label>
                         <div class="col-md-4">
                             <button id="singlebutton" name="singlebutton" class="btn btn-info" style="margin: 20px">Guardar</button>
+                            <a class="btn btn-info" href="{{ url('datos') }}" style="margin: 20px">Volver</a>
                         </div>
                         </div>
 

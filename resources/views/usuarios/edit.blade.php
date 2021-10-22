@@ -4,7 +4,7 @@
 <link rel="shortcut icon" href="../css/iconoG.ico" type="image/x-icon" />
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <center>
-<section class="content container-fluid">
+<section class="content container-fluid" style="margin: 40px 0">
     <div class="">
         <div class="col-md-12">
             <div class="card card-default">
@@ -64,7 +64,7 @@
                         <div class="form-group">
                         <label class="col-md-4 control-label" for="textinput">Teléfono</label>  
                         <div class="col-md-4">
-                        <input value="{{ $datos->Telefono }}" id="textinput" name="telefonoPaciente" type="text" placeholder="" class="form-control input-md">
+                        <input value="{{ $datos->Telefono }}" name="telefonoDat" type="text" placeholder="" class="form-control input-md">
                             
                         </div>
                         </div>
@@ -85,8 +85,8 @@
                         <div class="form-group">
                         <label class="col-md-4 control-label" for="singlebutton"></label>
                         <div class="col-md-4">
-                            <button id="singlebutton" name="singlebutton" class="btn btn-primary">Actualizar</button>
-                            <a class="btn btn-primary" href="{{ route('historial.index') }}"> Volver</a>
+                            <button id="singlebutton" name="singlebutton" class="btn btn-info" style="margin: 20px">Actualizar</button>
+                            <a class="btn btn-info" href="{{ route('historial.index') }}" style="margin: 20px"> Volver</a>
                         </div>
                         </div>
                     </form>
