@@ -1,4 +1,4 @@
-<img src="https://lh3.googleusercontent.com/s9bK8N3NN9eRxBpFz2VZqSLG9NnOcDWSwYYQzXFRnv-KpeCzM492fKohI8uAhLwohra__w=s170" width="200" height="200"alt="GHC Project"/>
+<img src="https://lh3.googleusercontent.com/s9bK8N3NN9eRxBpFz2VZqSLG9NnOcDWSwYYQzXFRnv-KpeCzM492fKohI8uAhLwohra__w=s170" alt="GHC Project"/>
 
 _Proyecto enfocado a la prestasción de servicios de la salud__
 
