@@ -1,4 +1,4 @@
-<img src="public\logo.jpeg" alt="GHC Project"/>
+<img src="C:\Users\SENA\ProyectoSalud\public\logo.jpeg" alt="GHC Project"/>
 
 _Proyecto enfocado a la prestasción de servicios de la salud__
 
