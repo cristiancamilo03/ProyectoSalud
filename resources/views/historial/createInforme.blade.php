@@ -61,8 +61,7 @@
                         <label class="col-md-4 control-label" for="textinput">Nombre</label>  
                         
                         <input id="textinput" name="nombre" type="text" placeholder="" class="form-control input-md">
-                            
-                        
+                        {{ $errors->first("nombre") }}
                         </div>
 
                         <!-- Text input-->
@@ -71,7 +70,7 @@
                         
                         <input id="textinput" name="edad" type="text" placeholder="" class="form-control input-md">
                             
-                        
+                        {{ $errors->first("edad") }}
                         </div>
 
                         <!-- Text input-->
@@ -80,7 +79,7 @@
                         
                         <input id="textinput" name="fechaInforme" type="date" placeholder="" class="form-control input-md">
                             
-                        
+                        {{ $errors->first("fechaInforme") }}
                         </div>
 
                         <!-- Text input-->
@@ -89,7 +88,7 @@
                         
                         <input id="textinput" name="documentoInforme" type="text" placeholder="" class="form-control input-md">
                             
-                        
+                        {{ $errors->first("documentoInforme") }}
                         </div>
 
                         <!-- Text input-->
@@ -97,7 +96,7 @@
                         <label class="col-md-4 control-label" for="textinput">Entidad</label>  
                         
                         <input id="textinput" name="entidadInforme" type="text" placeholder="" class="form-control input-md">
-                            
+                        {{ $errors->first("entidadInforme") }}
                         
                         </div>
 
@@ -107,7 +106,7 @@
                         
                         <input id="textinput" name="direccionInforme" type="text" placeholder="" class="form-control input-md">
                             
-                        
+                        {{ $errors->first("direccionInforme") }}
                         </div>
 
                         <!-- Text input-->
@@ -115,7 +114,7 @@
                         <label class="col-md-4 control-label" for="textinput">Teléfono</label>  
                         
                         <input id="textinput" name="telefonoPaciente" type="text" placeholder="" class="form-control input-md">
-                            
+                        {{ $errors->first("telefonoPaciente") }}
                         
                         </div>
 
@@ -124,7 +123,7 @@
                         <label class="col-md-4 control-label" for="featured">Diagnostico</label>  
                         
                         <input id="textinput" name="diagnostico" type="text" placeholder="" class="form-control input-md">
-                            
+                        {{ $errors->first("diagnostico") }}
                         
                         </div>
                         <div class="form-group">
@@ -134,7 +133,7 @@
                                 <option value="Si">Si</option>
                                 <option value="No">No</option>
                                 </select>
-                            
+                                {{ $errors->first("cuidadorP") }}
                             </div>
                             <div class="form-group">
                                 <label class="col-md-4 control-label" for="selectbasic">Conciencia</label>
@@ -144,7 +143,7 @@
                                     <option value="Somnolencia">Somnolencia</option>
                                     <option value="Coma">Coma</option>
                                     </select>
-                                
+                                    {{ $errors->first("conciencia") }}
                                 </div>
                                 <div class="form-group">
                                     <label class="col-md-4 control-label" for="selectbasic">Estado de la Piel</label>
@@ -154,7 +153,7 @@
                                         <option value="Zona de Presión">Zona de Presion</option>
                                         <option value="Escara">Escara</option>
                                         </select>
-                                    
+                                        {{ $errors->first("estadoP") }}
                                     </div>
                                     <div class="form-group">
                                         <label class="col-md-4 control-label" for="selectbasic">Drenajes</label>
@@ -164,7 +163,7 @@
                                             <option value="Gastrico">Gastrico</option>
                                             <option value="Otro">Otro</option>
                                             </select>
-                                        
+                                            {{ $errors->first("drenaje") }}
                                         </div>                                       
                                             <div class="form-group">
                                                 <label class="col-md-4 control-label" for="selectbasic">Venopunción</label>
@@ -175,7 +174,7 @@
                                                     <option value="Calor">Calor</option>
                                                     <option value="Dolor">Dolor</option>
                                                     </select>
-                                                
+                                                    {{ $errors->first("venopuncion") }}
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="col-md-4 control-label" for="selectbasic">Alimentación</label>
@@ -186,7 +185,7 @@
                                                         <option value="Oral">Oral</option>
                                                         <option value="Dolor">Dolor</option>
                                                         </select>
-                                                    
+                                                        {{ $errors->first("alimentacion") }}
                                                     </div>
                                                     <div class="form-group">
                                                         <label class="col-md-4 control-label" for="selectbasic">Deposición</label>
@@ -195,6 +194,7 @@
                                                                 <option value="Desenterico">Desenterico</option>
                                                                 <option value="Estreñido">Estreñido</option>                                                          
                                                                 </select>
+                                                                {{ $errors->first("deposición") }}
                                                             </div>
                                                             <div class="form-group">
                                                                 <label class="col-md-4 control-label" for="selectbasic">Orina</label>
@@ -205,7 +205,7 @@
                                                                     <option value="Incontinencia">Incontinencia</option>
                                                                     <option value="Sonda Vesical">Sonda Vesical</option>
                                                                     </select>
-                                                                
+                                                                    {{ $errors->first("orina") }}
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <label class="col-md-4 control-label" for="selectbasic">Oxigeno</label>
@@ -217,7 +217,7 @@
                                                                         <option value="Bala">Bala</option>
                                                                         <option value="Otro">Otro</option>
                                                                         </select>
-                                                                    
+                                                                        {{ $errors->first("oxigeno") }}
                                                                     </div>
                                                     </div>
                                                     <div class="col-lg-6">
@@ -227,87 +227,91 @@
                                                                             <select id="selectbasic" name="vomito" class="form-control">
                                                                                 <option value="Si">Si</option>
                                                                                 <option value="No">No</option>
-                                                                                </select>                                 
+                                                                                </select> 
+                                                                                {{ $errors->first("vomito") }}                                
                                                                             </div>
                                                                             <div class="form-group">
                                                                                 <label class="col-md-4 control-label" for="selectbasic">Hemovac</label>
                                                                                 <select id="selectbasic" name="hemovac" class="form-control">
                                                                                     <option value="Si">Si</option>
                                                                                     <option value="No">No</option>
-                                                                                    </select>                                 
+                                                                                    </select>    
+                                                                                    {{ $errors->first("hemovac") }}                             
                                                                                 </div>
                                                                                 <div class="form-group">
                                                                                     <label class="col-md-4 control-label" for="selectbasic">Sonda</label>
                                                                                     <select id="selectbasic" name="sonda" class="form-control">
                                                                                         <option value="Si">Si</option>
                                                                                         <option value="No">No</option>
-                                                                                        </select>                               
+                                                                                        </select>  
+                                                                                        {{ $errors->first("sonda") }}                             
                                                                                     </div>
                                                                                     <div class="form-group">
                                                                                         <label class="col-md-4 control-label" for="selectbasic">Total Liquido Eliminado</label>
-                                                                                        <input id="textinput" name="liquidoE" type="text" placeholder="" class="form-control input-md">                  
+                                                                                        <input id="textinput" name="liquidoE" type="text" placeholder="" class="form-control input-md"> 
+                                                                                        {{ $errors->first("liquidoE") }}                  
                                                                                         </div>
                                                                         <h1>Control de Medicamentos</h1>
                                                                 <div class="form-group">
                                                                     <label class="col-md-4 control-label" for="featured">Nombre Medicamento</label>                                                         
                                                                     <input id="textinput" name="nombreM" type="text" placeholder="" class="form-control input-md">
-
+                                                                    {{ $errors->first("nombreM") }} 
                                                                     </div>
                                                                     <div class="form-group">
                                                                         <label class="col-md-4 control-label" for="featured">Presentación</label>  
                                                                         
                                                                         <input id="textinput" name="presentacion" type="text" placeholder="" class="form-control input-md">
                                                                             
-                                                                        
+                                                                        {{ $errors->first("presentacion") }} 
                                                                         </div>
                                                                         <div class="form-group">
                                                                             <label class="col-md-4 control-label" for="featured">Concentración</label>  
                                                                             
                                                                             <input id="textinput" name="concentracion" type="text" placeholder="" class="form-control input-md">
                                                                                 
-                                                                            
+                                                                            {{ $errors->first("concentracion") }} 
                                                                             </div>
                                                                             <div class="form-group">
                                                                                 <label class="col-md-4 control-label" for="featured">Posologia</label>  
                                                                                 
                                                                                 <input id="textinput" name="posologia" type="text" placeholder="" class="form-control input-md">
                                                                                     
-                                                                                
+                                                                                {{ $errors->first("posologia") }}
                                                                                 </div>
                                                                                 <div class="form-group">
                                                                                         <label class="col-md-4 control-label" for="featured">Dilución</label>  
                                                                                         
                                                                                         <input id="textinput" name="dilucion" type="text" placeholder="" class="form-control input-md">
                                                                                             
-                                                                                
+                                                                                        {{ $errors->first("dilucion") }}
                                                                                 </div>
                                                                                 <div class="form-group">
                                                                                     <label class="col-md-4 control-label" for="featured">Via Admon</label>  
                                                                                   
                                                                                     <input id="textinput" name="viaAdmon" type="text" placeholder="" class="form-control input-md">
                                                                                         
-                                                                            
+                                                                                    {{ $errors->first("viaAdmon") }}
                                                                             </div>
                                                                             <div class="form-group">
                                                                                 <label class="col-md-4 control-label" for="featured">Fecha</label>  
                                                                                 
                                                                                 <input id="textinput" name="fecha" type="date" placeholder="" class="form-control input-md">
                                                                                     
-                                                                        
+                                                                                {{ $errors->first("fecha") }}
                                                                         </div>
                                                                         <div class="form-group">
                                                                             <label class="col-md-4 control-label" for="featured">Hora</label>  
                                                                             
                                                                             <input id="textinput" name="hora" type="time" placeholder="" class="form-control input-md">
                                                                                 
-                                                                    
+                                                                            {{ $errors->first("hora") }}
                                                                     </div>
                                                                     <div class="form-group">
                                                                         <label class="col-md-4 control-label" for="featured">Enfermero</label>  
                                                                         
                                                                         <input id="textinput" name="enfermero" type="text" placeholder="" class="form-control input-md">
                                                                             
-                                                                
+                                                                        {{ $errors->first("enfermero") }}
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <label class="col-md-4 control-label" for="selectbasic">Via Administración</label>
@@ -328,11 +332,12 @@
                                                                         <option value="Por Cateter Venoso Central">Por Cateter Venoso Central</option>
                                                                         <option value="CVC">CVC</option>
                                                                         </select>
-                                                                    
+                                                                        {{ $errors->first("viaAdministracion") }}
                                                                     </div>
                                                                     <div class="form-group">
                                                                         <label class="col-md-4 control-label" for="selectbasic">Observaciones</label>
-                                                                        <textarea name="observaciones" class="form-control"></textarea>     
+                                                                        <textarea name="observaciones" class="form-control"></textarea>   
+                                                                        {{ $errors->first("observaciones") }}  
                                                                         </div>                                                                 
                         <!-- Button -->
                     

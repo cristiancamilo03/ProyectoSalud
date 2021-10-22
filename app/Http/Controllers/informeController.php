@@ -39,7 +39,7 @@ class informeController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(validacionesRequest $request)
     {
         $maxHistorial=informeModel::all()->max('CustomerId');
 

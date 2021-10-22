@@ -33,8 +33,8 @@
                                     <tr>
 										<th>Nombre Paciente</th>
 										<th>Fecha Historial</th>
-										<th>Informe Medico</th>
-                                        <th>Estado Historial</th>
+										<th>Estado Historial</th>
+                                        <th>Reporte Medico</th>
 
                                     </tr>
                                 </thead>

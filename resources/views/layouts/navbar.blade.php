@@ -23,7 +23,7 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="{{url('informes')}}">Informes</a>
             </li>         
-            <li class="dropdown" style="position:absolute; right: 40px">
+            <li class="dropdown" style="position:absolute; right: 40px; text-decoration: none">
               <a class="nav-link active" data-toggle="dropdown" href="#">
                   <i class="fa fa-cog fa-fw"></i> Opciones <b class="caret"></b>
               </a>

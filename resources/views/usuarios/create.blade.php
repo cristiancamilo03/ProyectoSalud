@@ -7,7 +7,7 @@
 <section class="content container-fluid" style="margin: 40px 0">
         <div class="row">
             <div class="col-md-8">
-                <div class="card card-default">
+                <div class="card card-default " style="margin-left: 35%" >
                     <div class="card-header">
                         <span class="card-title">Crear Usuario</span>
                     </div>
