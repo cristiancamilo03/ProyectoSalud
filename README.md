@@ -1,4 +1,4 @@
-<img src="public\css\logo.jpeg" alt="GHC Project"/>
+<img src="public\css\logo.png" alt="GHC Project"/>
 
 _Proyecto enfocado a la prestasción de servicios de la salud__
 
