@@ -1,6 +1,6 @@
-<img src="Public/Assets/images/Logo.png" alt="FinancialFast"/>
+<img src="public\logo.jpeg" alt="GHC Project"/>
 
-_Proyecto enfocado al mundo financiero__
+_Proyecto enfocado a la prestasción de servicios de la salud__
 
 ## Comenzando 🚀
 
@@ -9,7 +9,7 @@ _Proyecto enfocado al mundo financiero__
 #### LENGUAJES 🔆 
 
 ```
-Desarrollado en PHP7 (Version superior a 7),MYSQL,JS,CSS,HTML
+Desarrollado en Laravel 7,PHP,MYSQL,JS,CSS,HTML,Boostrap
  
 ```
 #### XAMPP 💾
@@ -23,18 +23,11 @@ nos facilita la gestión de bases de datos MySQL, el servidor web Apache
 ```
 [Paso a Paso Instalacion](https://docs.google.com/document/d/1Bhw7Dh78Y_3mRGV6LUHsdlj1JVczSdwI/edit?usp=sharing&ouid=109675321760699536418&rtpof=true&sd=true)
 
-#### OCR 📂
+
+[Paso a Paso Instalacion](http://www.fpdf.org/)
+#### FPDF 📲
 ```
-El OCR (Optical Character Recognition) es un software de reconocimiento de texto que saca de una imagen el texto que contiene y lo transforma en cadenas de caracteres para guardarlos en un formato que se pueda utilizar en programas de edición de texto.
-```
-```
-https://parzibyte.me/blog/2019/05/11/instalar-tesseract-ocr-windows-10/
-nos ayuda al reconocimiento de texto en imágenes
-```
-[Paso a Paso Instalacion](https://docs.google.com/document/d/1lkkpoQ8DBegIkMFHtVOeULg25KREor0J/edit?usp=sharing&ouid=109675321760699536418&rtpof=true&sd=true)
-#### PDFPARSER 📲
-```
-Traducción del inglés-Pdf-parser es un programa de línea de comandos que analiza y analiza documentos PDF. Proporciona funciones para extraer datos sin procesar de documentos PDF, como imágenes comprimidas. pdf-parser puede manejar documentos PDF maliciosos que usan funciones de ofuscación del lenguaje PDF.
+FPDF es una libreria de composer, que tiene como fin la creación de reportes mediante archivos PDF.
 ```
 
 ```
@@ -58,28 +51,30 @@ Instalacion de algunas librerias
 [Documentacion](https://drive.google.com/drive/u/1/folders/1vkT_J_QQRNWZl_mo3U1W9xRrAuEL4mDw) 
 ## Colaboradores 🖇️
 
-[Edier Heraldo Hernández](https://github.com/eideard-hm/) 
+[Juan David Oviedo](https://github.com/JuanDa-code/) 
 
 
-[Sergio Vargas](https://github.com/Sergio-Vargas/)
+[Daniel Bernal](https://github.com/DanielBernal133)
 
 
-[Edward Santiago Perez](https://github.com/sp1014)
+[Cristian Alarcon](https://github.com/cristiancamilo03)
 
 
 ## Paso a Paso 📖
 
 ```
-1. Clonar el proyecto SenaSoftFinanzas (https://github.com/sp1014/SenaSoftFinanzas.git) en la carpeta htdocs (C:\xampp\htdocs\SenaSoftFinanzas)
+1. Clonar el proyecto ProyectoSalud (https://github.com/cristiancamilo03/ProyectoSalud.git) en la carpeta que desees
 2. Ejecutar la aplicacion de XAMPP e inicializar Apache y MySql
-3. Abrir el navegador e ir al local host (http://localhost/SenaSoftFinanzas/)
+3. Escribir en la terminal o consola cmd el siguiente comando de laravel: php artisan migrate, esto con el fin de crear la base de datos
+3. Escribir el siguiente comando de laravel: php artisan serve, esto con el fin de iniciar el servidor
+3. Abrir en el navegador la siguiente direcciónn url: http://127.0.0.1:8000/inicio
 ```
 
-## © 2021 Financialfast ✒️
+## © 2021 GHC Project ✒️
 
 ---
-⌨️ Financial Fast (https://github.com/sp1014/SenaSoftFinanzas.git) 😊
+⌨️ GHC Project (https://github.com/cristiancamilo03/ProyectoSalud.git) 😊
 
-<img src="Public/Assets/images/Logo.png" alt="FinancialFast"/>
+<img src="public\logo.jpeg"/>
 
 
