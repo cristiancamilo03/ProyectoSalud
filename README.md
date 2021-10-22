@@ -1,4 +1,4 @@
-<img src="public\css\logo.jpe" alt="GHC Project"/>
+<img src="https://www.lavanguardia.com/files/content_image_mobile_filter/uploads/2018/06/22/5fa433b8178fc.jpeg" alt="GHC Project"/>
 
 _Proyecto enfocado a la prestasción de servicios de la salud__
 
