@@ -22,7 +22,7 @@
       <a href="{{ url('registrarse/create' ) }}"<button class="btn btn-info">Registrarse</button></a>
       </center>
       <center>
-      <a href="{{ url('plantilla') }}"<button class="btn btn-info" style="margin-top: 15px">Volver al Inicio</button></a>
+      <a href="{{ url('first') }}"<button class="btn btn-info" style="margin-top: 15px">Volver al Inicio</button></a>
       </center>
     </div>
   </div>

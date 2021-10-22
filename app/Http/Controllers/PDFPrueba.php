@@ -5,13 +5,51 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\informeModel;
 
-class plantillaPDF extends Controller
+class PDFPrueba extends Controller
 {
-    public function pdf(){
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        //
+    }
 
-        $datos = informeModel::all();
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        //
+    }
 
-        foreach ($datos as $dato){
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        //
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($idInforme)
+    {
+        $pruebas = informeModel::find($idInforme);
+
+        foreach ($pruebas as $prueba){
+        }
             $pdf = app('Fpdf');
             $pdf->AddPage('L' , 'A4');
             $pdf->SetFont('Arial', '',14);
@@ -23,77 +61,45 @@ class plantillaPDF extends Controller
             $pdf->Cell(50,10, 'FECHA');
             $pdf->SetXY(25, 15);
             $pdf->Cell(50,10, '_____________________________________');
-            $pdf->SetXY(25, 15);
-            $pdf->Cell(50,10, $dato->fechaNac);
             $pdf->SetXY(05, 25);
             $pdf->Cell(50,10, 'NOMBRES Y APELLIDOS');
             $pdf->SetXY(50, 25);
-            $pdf->Cell(50,10, '_____________________________________');
-            $pdf->SetXY(50, 25);
-            $pdf->Cell(50,10, $dato->nombre);
+            $pdf->Cell(50,10, $prueba->nombre);
             $pdf->SetXY(05, 35);
             $pdf->Cell(50,10, 'DOCUMENTO IDENTIDAD');
             $pdf->SetXY(50, 35);
             $pdf->Cell(50,10, '_____________________________________');
-            $pdf->SetXY(50, 35);
-            $pdf->Cell(50,10, $dato->documento);
             $pdf->SetXY(05, 45);
             $pdf->Cell(50,10, 'DIRECCION/TELEFONO');
             $pdf->SetXY(47, 45);
             $pdf->Cell(50,10, '_____________________________________');
-            $pdf->SetXY(47, 45);
-            $pdf->Cell(50,10, $dato->direccion);
-            $pdf->SetXY(80, 45);
-            $pdf->Cell(50,10, $dato->telefono);
             $pdf->SetXY(125, 25);
             $pdf->Cell(50,10, 'EDAD');
             $pdf->SetXY(137, 25);
             $pdf->Cell(50,10, '______________');
-            $pdf->SetXY(137, 25);
-            $pdf->Cell(50,10, $dato->edad);
             $pdf->SetXY(125, 35);
             $pdf->Cell(50,10, 'ENTIDAD');
             $pdf->SetXY(143, 35);
             $pdf->Cell(50,10, '______________');
-            $pdf->SetXY(143, 35);
-            $pdf->Cell(50,10, $dato->entidad);
             $pdf->SetFont('Arial', 'B', 10);
             $pdf->SetXY(05, 60);
             $pdf->Cell(50,10, 'Cuidador Primario');
-            $pdf->SetXY(40, 60);
-            $pdf->Cell(50,10, $dato->cuidador);
             $pdf->SetXY(05, 68);
             $pdf->Cell(50,10, 'CONCIENCIA');
-            $pdf->SetXY(40, 68);
-            $pdf->Cell(50,10, $dato->conciencia);
             $pdf->SetXY(05, 76);
             $pdf->Cell(50,10, 'ESTADO DE LA PIEL');
-            $pdf->SetXY(45, 76);
-            $pdf->Cell(50,10, $dato->estadoPiel);
             $pdf->SetXY(05, 84);
             $pdf->Cell(50,10, 'DRENAJES');
-            $pdf->SetXY(40, 84);
-            $pdf->Cell(50,10, $dato->drenajes);
             $pdf->SetXY(05, 92);
             $pdf->Cell(50,10, 'VENOPUNCION');
-            $pdf->SetXY(40, 92);
-            $pdf->Cell(50,10, $dato->venopuncion);
             $pdf->SetXY(05, 100);
             $pdf->Cell(50,10, 'ALIMENTACION');
-            $pdf->SetXY(40, 100);
-            $pdf->Cell(50,10, $dato->alimentacion);
             $pdf->SetXY(05, 108);
             $pdf->Cell(50,10, 'DEPOSICION');
-            $pdf->SetXY(40, 108);
-            $pdf->Cell(50,10, $dato->deposicion);
             $pdf->SetXY(05, 116);
             $pdf->Cell(50,10, 'ORINA');
-            $pdf->SetXY(40, 116);
-            $pdf->Cell(50,10, $dato->orina);
             $pdf->SetXY(05, 124);
             $pdf->Cell(50,10, 'OXIGENO');
-            $pdf->SetXY(40, 124);
-            $pdf->Cell(50,10, $dato->oxigeno);
             $pdf->SetXY(05, 130);
             $pdf->Cell(50,10, 'CONTROL DE MEDICAMENTOS');
             $pdf->SetXY(05, 140);
@@ -101,29 +107,37 @@ class plantillaPDF extends Controller
             $pdf->Cell(45,6, 'NOMBRE', 'LTRB' , 0 , 'C');
             $pdf->Cell(35,6, 'PRESENTAC', 'LTRB' , 0 , 'C');
             $pdf->Cell(35,6, 'CONCENTRACION', 'LTRB' , 0 , 'C');
+            $pdf->Cell(28,6, 'POSOLOGIA', 'LTRB' , 0 , 'C');
             $pdf->Cell(28,6, 'DILUCION', 'LTRB' , 0 , 'C');
             $pdf->Cell(28,6, 'VIA ADMON', 'LTRB' , 0 , 'C');
             $pdf->Cell(28,6, 'FECHA', 'LTRB' , 0 , 'C');
             $pdf->Cell(28,6, 'HORA', 'LTRB' , 0 , 'C');
             $pdf->Cell(35,6, 'ENFERMERO (A)', 'LTRB' , 1 , 'C');
             $pdf->SetXY(05, 146);
-            $pdf->Cell(45,6, $dato->nombre, 'LTRB' , 0, 'C');
-            $pdf->Cell(35,6, $dato->presentacion, 'LTRB' , 0 , 'C');
-            $pdf->Cell(35,6, $dato->concentracion ,'LTRB' , 0 , 'C');
-            $pdf->Cell(28,6, $dato-> dilucion,'LTRB' , 0 , 'C');
-            $pdf->Cell(28,6, $dato-> viaAdmon,'LTRB' , 0 , 'C');
-            $pdf->Cell(28,6, $dato-> fecha,'LTRB' , 0 , 'C');
-            $pdf->Cell(28,6, $dato-> hora,'LTRB' , 0 , 'C');
-            $pdf->Cell(35,6, $dato-> enfermero,'LTRB' , 1 , 'C');
+            $pdf->Cell(45,6, '', 'LTRB' , 0, 'C');
+            $pdf->Cell(35,6, '', 'LTRB' , 0 , 'C');
+            $pdf->Cell(35,6, '', 'LTRB' , 0 , 'C');
+            $pdf->Cell(28,6, '', 'LTRB' , 0 , 'C');
+            $pdf->Cell(28,6, '', 'LTRB' , 0 , 'C');
+            $pdf->Cell(28,6, '', 'LTRB' , 0 , 'C');
+            $pdf->Cell(28,6, '', 'LTRB' , 0 , 'C');
+            $pdf->Cell(28,6, '', 'LTRB' , 0 , 'C');
+            $pdf->Cell(35,6, '', 'LTRB' , 1 , 'C');
             $pdf->SetXY(05, 152);
-            $pdf->Cell(262,6, 'POSOLOGIA', 'LTRB' , 0 , 'C');
-            $pdf->SetXY(05, 158);
-            $pdf->Cell(262,6, $dato->posologia ,'LTRB' , 0 , 'L');
+            $pdf->Cell(45,6, '', 'LTRB' , 0, 'C');
+            $pdf->Cell(35,6, '', 'LTRB' , 0 , 'C');
+            $pdf->Cell(35,6, '', 'LTRB' , 0 , 'C');
+            $pdf->Cell(28,6, '', 'LTRB' , 0 , 'C');
+            $pdf->Cell(28,6, '', 'LTRB' , 0 , 'C');
+            $pdf->Cell(28,6, '', 'LTRB' , 0 , 'C');
+            $pdf->Cell(28,6, '', 'LTRB' , 0 , 'C');
+            $pdf->Cell(28,6, '', 'LTRB' , 0 , 'C');
+            $pdf->Cell(35,6, '', 'LTRB' , 1 , 'C');
             $pdf->SetFont('Arial', 'B', 10);
-            $pdf->SetXY(05, 170);
+            $pdf->SetXY(05, 160);
             $pdf->Cell(50,10, 'VIA DE ADMINISTRACION'); 
-            $pdf->SetXY(50, 170);
-            $pdf->Cell(50,10, $dato->viaAdministracion); 
+            $pdf->SetXY(05, 165);
+            $pdf->Cell(50,10, 'Subcutanea');
             $pdf->AddPage('L' , 'A4');
             $pdf->SetFont('Arial', 'B', 9);
             $pdf->SetXY(05, 10);
@@ -218,47 +232,46 @@ class plantillaPDF extends Controller
             $pdf->SetXY(05, 65);
             $pdf->Cell(45,6, 'LIQUIDOS ELIMINADOS');
             $pdf->SetXY(05, 71);
-            $pdf->Cell(35,6, 'HORA', 'LTRB' , 0,'C');
-            $pdf->Cell(35,6, 'ORINA', 'LTRB' , 0,'C');
-            $pdf->Cell(35,6, 'VOMITO', 'LTRB' , 0,'C');
-            $pdf->Cell(35,6, 'HEMOVAC', 'LTRB' , 0,'C');
-            $pdf->Cell(35,6, 'DEPOSICION', 'LTRB' , 0,'C');
-            $pdf->Cell(35,6, 'SONDA', 'LTRB' , 0,'C');
-            $pdf->Cell(40,6, 'TOTAL LIQ.ELIMINADOS', 'LTRB' , 0,'C');
-            $pdf->SetXY(05, 77);
-            $pdf->Cell(35,6, $dato->hora, 'LTRB' , 0,'C');
-            $pdf->Cell(35,6, $dato->orina, 'LTRB' , 0,'C');
-            $pdf->Cell(35,6, $dato->vomito, 'LTRB' , 0,'C');
-            $pdf->Cell(35,6, $dato->hemovac, 'LTRB' , 0,'C');
-            $pdf->Cell(35,6, $dato->deposicion, 'LTRB' , 0,'C');
-            $pdf->Cell(35,6, $dato->sonda, 'LTRB' , 0,'C');
-            $pdf->Cell(40,6, $dato->liquidoE, 'LTRB' , 0,'C');
-            $pdf->SetXY(05, 83);
-            $pdf->Cell(250,6, 'OBSERVACIONES', 'LTRB' , 0,'L');
-            $pdf->SetXY(05, 89);
-            $pdf->Cell(250,6, $dato->observaciones, 'LTRB' , 1,'L');
-            $pdf->SetXY(05, 95);
-            $pdf->Cell(290,6, 'OBSERVACIONES');
-            $pdf->SetXY(05, 100);
-            $pdf->Cell(290,6, '', 'LTRB' , 0,'C');
-            $pdf->SetXY(05, 106);
-            $pdf->Cell(290,6, '', 'LTRB' , 0,'C');
-            $pdf->SetXY(05, 112);
-            $pdf->Cell(290,6, '', 'LTRB' , 0,'C');
-            $pdf->SetXY(05, 118);
-            $pdf->Cell(290,6, '', 'LTRB' , 0,'C');
-            $pdf->SetXY(05, 124);
-            $pdf->Cell(290,6, '', 'LTRB' , 0,'C');
-            $pdf->SetXY(05, 130);
-            $pdf->Cell(290,6, '', 'LTRB' , 0,'C');
-            $pdf->SetXY(05, 136);
-            $pdf->Cell(290,6, '', 'LTRB' , 0,'C');
-            $pdf->SetXY(05, 142);
-            $pdf->Cell(290,6, '', 'LTRB' , 0,'C');
+            $pdf->Cell(45,6, 'HORA', 'LTRB' , 0,'C');
+    
     
     
             return response($pdf->Output() , 200, [ 'Content-type' => 'application/pdf']);
-        }
-        
+       
+
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        //
     }
 }

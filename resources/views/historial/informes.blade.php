@@ -1,8 +1,6 @@
 @extends('layouts.navbar')
 
 @section('header')
-    
-
 <script src="https://kit.fontawesome.com/e0a1bf980c.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="./css/style.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -22,7 +20,7 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <a href="{{ route('historial.create') }}"<button class="btn btn-info">Crear Historial</button></a>
+                        <a href="{{ url('informes/create') }}"<button class="btn btn-info">Crear Informe</button></a>
                     </div>
                     @if ( session("mesnaje_exito"))
                         <div>{{ session("mensaje_exito") }} </div>
@@ -36,37 +34,20 @@
 										<th>Fecha Historial</th>
 										<th>Informe Medico</th>
                                         <th>Estado Historial</th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
+
                                     </tr>
                                 </thead>
                                 <tbody>
                                     @foreach ($historial as $historialclinico)
                                         <tr>                                           
-											<td>{{ $historialclinico->NombrePaciente . ' ' $historialclinico->ApellidoPaciente }}</td>
-											<td>{{ $historialclinico->FechaHistorial }}</td>
-                                            <td>@if ($historialclinico->estadoHistorial == 0)
-                                                    Inactivo
-                                                @endif
-                                                @if ($historialclinico->estadoHistorial == 1)
-                                                    Activo
-                                                @endif</td>
-                                            <td>
-                                                <a href="{{ url('historial/'. $historialclinico->idHistorial)}}">
-                                                <i class="icono2 far fa-eye"></i>
-                                                </a>                                                                                            
-                                            </td>
-                                            <td>
-                                                <a href="{{ url('historial/'. $historialclinico->idHistorial . "/edit")}}">
-                                                <i class="icono1 fas fa-pencil-alt"></i>
-                                            </a>
-                                            </td>
+											<td>{{ $historialclinico->nombre  }}</td>
+											<td>{{ $historialclinico->fechaNac }}</td>
+                                            <td>{{ $historialclinico->estado }}</td>   
                                             <td>
                                                 <a href="{{ url('pdf/'. $historialclinico->idHistorial)}}">
                                                 <i class="icono3 far fa-file-pdf"></i>
                                                 </a>
-                                            </td>
+                                            </td>                                                                                                     
                                         </tr>
                                     @endforeach
                                 </tbody>

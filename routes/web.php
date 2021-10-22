@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\PDFPrueba;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,22 +31,19 @@ Route::resource('historial', 'historialController')->middleware('estado');
 
 Route::resource('registrarse', 'registrarseController');
 
-Route::get('inicio', function () {
+Route::get('first', function () {
     return view('plantilla.index');
 });
 
 Route::get('Perfil', function () {
     return view ('inicioSesion.actualizarPefil');
 });
-
+Route::get('prueba', function () {
+    return view ('historial.prueba');
+});
 Route::resource('perfil', 'actualizarController');
 
-Route::get('informes', function () {
-    return view('historial.informes');
-});
-// Route::get('acerca-nosotros', function () {
-//     return view ('plantilla.about-us');
-// });
+Route::resource('informes', 'informeController');
 
 Route::resource('Lector', 'lectorImagenesController');
 
@@ -56,3 +54,8 @@ Route::post('login' , 'inicioController@login')->name('login.verify');
 Route::get('logout', 'inicioController@logout')->name('logout');
 
 Route::get('pdf' , 'plantillaPDF@pdf');
+
+
+Route::get('pruebas', function () {
+    return view ('pdf.index');
+});

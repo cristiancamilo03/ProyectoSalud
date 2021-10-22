@@ -1,3 +1,6 @@
+@extends('layouts.navbar')
+
+@section('header')
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <center>
 <section class="content container-fluid">
@@ -87,8 +90,8 @@
                         <div class="form-group">
                         <label class="col-md-4 control-label" for="singlebutton"></label>
                         <div class="col-md-4">
-                            <button id="singlebutton" name="singlebutton" class="btn btn-primary">Actualizar</button>
-                            <a class="btn btn-primary" href="{{ route('historial.index') }}"> Volver</a>
+                            <button id="singlebutton" name="singlebutton" class="btn btn-info" style="margin: 20px">Actualizar</button>
+                            <a class="btn btn-info" href="{{ route('historial.index') }}" style="margin: 20px"> Volver</a>
                         </div>
                         </div>
                     </form>
@@ -98,3 +101,4 @@
     </div>
 </section>
 </center>
+@endsection

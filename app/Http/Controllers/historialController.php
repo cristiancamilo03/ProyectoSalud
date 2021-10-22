@@ -77,6 +77,8 @@ class historialController extends Controller
     {
         return view('historial.show')->with('historial' , $historial);
     }
+  
+
 
     /**
      * Show the form for editing the specified resource.

@@ -64,7 +64,7 @@
                                                 
                                             </td>
                                             <td>
-                                                <a href="{{$historialclinico->FirmaPaciente}}"> Ver informe</a>
+                                                <a href="{{$historialclinico->FirmaPaciente}}">Ver firma</a>
                                             </td>
                                             <td>@if ($historialclinico->estadoHistorial == 0)
                                                     Inactivo
